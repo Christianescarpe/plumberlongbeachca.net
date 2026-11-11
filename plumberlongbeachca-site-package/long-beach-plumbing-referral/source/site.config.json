@@ -1,0 +1,41 @@
+{
+  "mode": "preview",
+  "basePath": "",
+  "brand": {
+    "publicName": "Long Beach Plumbing Referral",
+    "nameStatus": "descriptive-working-title",
+    "approvedBrand": "",
+    "nameApproved": false,
+    "operatorLegalName": "",
+    "operatorStatus": "unconfigured"
+  },
+  "domain": {
+    "hostname": "",
+    "verified": false
+  },
+  "phone": {
+    "display": "",
+    "e164": "",
+    "verified": false
+  },
+  "hours": {
+    "summary": "",
+    "timezone": "America/Los_Angeles",
+    "verified": false,
+    "afterHoursStatement": "unconfigured",
+    "afterHoursRoutingConfirmed": false
+  },
+  "coverage": {
+    "residentialZipsVerified": false,
+    "nearbyCitiesVerified": false,
+    "specialtiesVerified": false,
+    "commercialAcceptanceVerified": false,
+    "billableTermsVerified": false,
+    "acknowledgementNote": ""
+  },
+  "compliance": {
+    "californiaReferralReview": false,
+    "privacyReview": false,
+    "publishApproved": false
+  }
+}

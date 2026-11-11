@@ -1,0 +1,27 @@
+# Example for an ordinary nginx static host.
+# Point root at the website/ directory from the handoff ZIP (the built dist/ folder).
+# Do not enable the production block until the production build has been made
+# with a verified domain. The preview .htaccess equivalent is robots plus noindex.
+
+server {
+    listen 80;
+    server_name example.invalid;
+    root /var/www/long-beach-plumbing-referral;
+    index index.html;
+
+    # Preview only. Remove this header after a real production build is deployed.
+    add_header X-Robots-Tag "noindex, nofollow, noarchive" always;
+
+    location / {
+        try_files $uri $uri/ $uri/index.html =404;
+    }
+
+    error_page 404 /404.html;
+}
+
+# Production sketch, not enabled by this repository:
+# - serve only a build made with `node src/build.mjs --production`
+# - set server_name to the verified domain
+# - redirect HTTP to HTTPS with a real certificate
+# - remove the preview X-Robots-Tag
+# - the generated sitemap and canonicals already use that domain

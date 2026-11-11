@@ -1,0 +1,12 @@
+{
+  "name": "long-beach-plumbing-referral",
+  "private": true,
+  "type": "module",
+  "description": "Private-preview static site for an independent Long Beach plumbing referral service.",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "preview": "node scripts/preview-server.mjs",
+    "qa": "node scripts/qa.mjs",
+    "check:production": "node scripts/check-production-gate.mjs"
+  }
+}

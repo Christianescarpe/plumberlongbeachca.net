@@ -1,0 +1,7 @@
+# Private preview. Do not publish this folder.
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+<IfModule mod_headers.c>
+Header set X-Robots-Tag "noindex, nofollow, noarchive"
+</IfModule>

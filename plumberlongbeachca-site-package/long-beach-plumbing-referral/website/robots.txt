@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# Private preview. This file is not a production sitemap policy.

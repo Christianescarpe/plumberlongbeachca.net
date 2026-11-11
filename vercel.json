@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd plumberlongbeachca-site-package/long-beach-plumbing-referral/source && node src/build.mjs",
+  "outputDirectory": "plumberlongbeachca-site-package/long-beach-plumbing-referral/source/dist",
+  "trailingSlash": true
+}
