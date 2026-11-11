@@ -509,7 +509,7 @@ export function renderDocument(doc, config, photos) {
   const robots = config.mode === "production" ? "index, follow" : "noindex, nofollow, noarchive";
   const canonical = config.mode === "production" ? `<link rel="canonical" href="https://${escapeHtml(config.domain.hostname)}${escapeHtml(front.path)}">` : "";
   const ogUrl = config.mode === "production" ? `<meta property="og:url" content="https://${escapeHtml(config.domain.hostname)}${escapeHtml(front.path)}">` : "";
-  const banner = config.mode === "preview" ? `<div class="preview-banner"><div class="wrap"><p><strong>Private preview.</strong> Not for publication. No referral number is active.</p></div></div>` : "";
+  const banner = "";
   const currentNav = primaryNav.find(([, href]) => front.path === href || (href !== "/" && front.path.startsWith(href)))?.[1] || "";
   const article = `<article data-wordcount>
 <header class="page-head${hero ? " has-media" : ""}">
