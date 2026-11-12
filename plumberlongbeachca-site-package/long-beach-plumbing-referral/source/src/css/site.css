@@ -98,22 +98,26 @@ h1, h2 {
 }
 
 h1 {
-  margin: 0.35rem 0 0.85rem;
+  margin: 0.35rem 0 1rem;
   font-size: clamp(2.25rem, 4.5vw, 3.65rem);
   line-height: 1.04;
 }
 
 h2 {
-  margin: 2.6rem 0 0.75rem;
+  margin: 2.5rem 0 0.85rem;
   font-size: clamp(1.5rem, 2.5vw, 2.15rem);
 }
 
 h3 {
-  margin: 1.5rem 0 0.4rem;
+  margin: 1.75rem 0 0.5rem;
   font-size: 1.2rem;
 }
 
-p { margin: 0.75rem 0; }
+p {
+  margin: 0 0 1rem;
+  line-height: 1.65;
+}
+p:last-child { margin-bottom: 0; }
 
 a { color: var(--blue-light); text-underline-offset: 0.18em; }
 a:hover { color: #ffffff; }
@@ -376,8 +380,9 @@ a:hover { color: #ffffff; }
 }
 
 .lead {
+  margin: 0;
   font-size: 1.08rem;
-  line-height: 1.55;
+  line-height: 1.6;
   max-width: 38rem;
   color: var(--muted);
 }
@@ -387,7 +392,7 @@ a:hover { color: #ffffff; }
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
-  margin-top: 1.35rem;
+  margin-top: 1.5rem;
 }
 
 .hero-call {
@@ -429,18 +434,18 @@ a:hover { color: #ffffff; }
 }
 
 .referral-line {
-  margin: 0.65rem 0 0;
+  margin: 0.9rem 0 0;
   max-width: 34rem;
   color: var(--muted);
   font-size: 0.88rem;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .pill-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
-  margin-top: 1.4rem;
+  margin-top: 1.5rem;
 }
 
 .pill-tag {
@@ -496,7 +501,7 @@ a:hover { color: #ffffff; }
   background: var(--blue);
   color: #ffffff;
   padding: 0.8rem 0;
-  margin: 0.25rem -50vw 3rem;
+  margin: 0.5rem -50vw 4rem;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   transform: rotate(-1.5deg);
@@ -536,19 +541,20 @@ a:hover { color: #ffffff; }
 
 /* Design Showcase Bands */
 .design-band {
-  margin: 3.25rem 0;
+  margin: 4rem 0;
 }
 
 .section-head-center {
   text-align: center;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2.25rem;
 }
 .section-head-center h2,
 .section-head-left h2 {
   margin-top: 0.35rem;
+  margin-bottom: 0;
 }
 .section-head-left {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 /* 4-Column Showcase Image Grid */
@@ -673,12 +679,17 @@ a:hover { color: #ffffff; }
 /* Dark Service Cards with Blue Circular Icons */
 .symptom-block,
 .related {
-  margin: 3.25rem 0;
+  margin: 4rem 0;
 }
 
 .symptom-block h2 {
   text-align: center;
-  margin-bottom: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.related h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 .link-cards,
@@ -830,7 +841,7 @@ a:hover { color: #ffffff; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -857,8 +868,8 @@ a:hover { color: #ffffff; }
   background: #4d95ba;
   color: #ffffff;
   text-align: center;
-  padding: 3.25rem 0;
-  margin-top: 3.25rem;
+  padding: 4.25rem 0;
+  margin-top: 4rem;
 }
 
 .cta-band h2 {
@@ -909,6 +920,27 @@ a:hover { color: #ffffff; }
 }
 
 /* Inner Content Elements & Callouts */
+.section {
+  margin: 2.75rem 0;
+}
+
+.section > :first-child,
+.local-context > :first-child,
+.conditional > :first-child,
+.shared-safety > :first-child,
+.sources > :first-child {
+  margin-top: 0;
+}
+
+.section > :last-child,
+.local-context > :last-child,
+.conditional > :last-child,
+.shared-safety > :last-child,
+.sources > :last-child,
+.toc > :last-child {
+  margin-bottom: 0;
+}
+
 article[data-wordcount] > p,
 .section p,
 .local-context p,
@@ -922,33 +954,33 @@ article[data-wordcount] > p,
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem 0;
 }
 .toc strong { color: var(--ink); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
-.toc ol { margin: 0.45rem 0 0; padding-left: 1.2rem; }
-.toc li { margin: 0.25rem 0; }
+.toc ol { margin: 0.55rem 0 0; padding-left: 1.25rem; }
+.toc li { margin: 0.3rem 0; }
 
 .steps li {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 1.25rem;
+  padding: 1.35rem;
 }
 
 .num {
   display: block;
   color: var(--blue);
   font-size: 1.65rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 
 .local-context {
   background: rgba(80, 151, 188, 0.08);
   border: 1px solid rgba(80, 151, 188, 0.28);
   border-radius: 8px;
-  padding: 0.5rem 1.25rem 1.15rem;
-  margin: 1.6rem 0;
+  padding: 1.35rem 1.5rem;
+  margin: 1.75rem 0;
 }
 
 .conditional {
@@ -956,20 +988,20 @@ article[data-wordcount] > p,
   border: 1px solid var(--line);
   border-left: 3px solid var(--blue);
   border-radius: 8px;
-  padding: 0.5rem 1.25rem 1rem;
-  margin: 1.25rem 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .shared-safety {
   background: #140f10;
   border: 1px solid rgba(224, 138, 79, 0.45);
   border-radius: 8px;
-  padding: 0.5rem 1.25rem 1.15rem;
-  margin: 1.25rem 0 1.5rem;
+  padding: 1.35rem 1.5rem;
+  margin: 1.75rem 0;
 }
-.shared-safety h2 { color: #f6b286; margin-top: 0.75rem; font-size: 1.25rem; }
+.shared-safety h2 { color: #f6b286; margin-top: 0; margin-bottom: 0.65rem; font-size: 1.25rem; }
 
-.table-wrap { overflow-x: auto; margin: 1.25rem 0 1.75rem; border: 1px solid var(--line); border-radius: 8px; }
+.table-wrap { overflow-x: auto; margin: 1.5rem 0 2rem; border: 1px solid var(--line); border-radius: 8px; }
 table {
   width: 100%;
   border-collapse: collapse;
@@ -998,14 +1030,15 @@ th {
   font-weight: 700;
 }
 
-.faq { margin: 2.5rem 0; }
+.faq { margin: 3rem 0; }
+.faq h2 { margin-top: 0; margin-bottom: 1.25rem; }
 .qa { border-top: 1px solid var(--line); }
 .qa:last-child { border-bottom: 1px solid var(--line); }
 .qa summary {
   cursor: pointer;
   font-weight: 600;
   color: var(--ink);
-  padding: 1rem 0;
+  padding: 1.05rem 0;
   min-height: 48px;
   display: flex;
   justify-content: space-between;
@@ -1021,11 +1054,11 @@ th {
   line-height: 1;
 }
 .qa[open] summary::after { content: "–"; }
-.qa p { margin: 0 0 1.15rem; color: var(--muted); }
+.qa p { margin: 0 0 1.25rem; color: var(--muted); }
 
 .sources {
-  margin-top: 2.25rem;
-  padding-top: 1rem;
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
   border-top: 1px solid var(--line);
   font-size: 0.94rem;
   color: var(--muted);
@@ -1044,17 +1077,21 @@ figcaption .label {
   margin-bottom: 0.1rem;
 }
 
-ul.plain, article ul:not(.link-cards):not(.steps):not(.subnav) {
-  padding-left: 1.15rem;
-  max-width: 70ch;
+ul.plain,
+article ul:not(.link-cards):not(.steps):not(.subnav),
+article ol:not(.crumbs) {
+  padding-left: 1.25rem;
+  max-width: 68ch;
+  margin: 0.75rem 0 1.25rem;
 }
-article ul:not(.link-cards):not(.steps) li { margin: 0.35rem 0; }
+article ul:not(.link-cards):not(.steps) li,
+article ol:not(.crumbs) li { margin: 0.45rem 0; }
 
 /* Footer */
 .site-footer {
   background: #000000;
   color: var(--muted);
-  padding: 3.5rem 0 2.5rem;
+  padding: 4rem 0 2.75rem;
 }
 .site-footer a { color: var(--muted); text-decoration: none; }
 .site-footer a:hover { color: #ffffff; }
@@ -1114,6 +1151,12 @@ h2, h3, .qa { scroll-margin: 5rem; }
   .symptom-block .link-cards { grid-template-columns: repeat(3, 1fr); }
   .sticky-call { display: none !important; }
   body { padding-bottom: 0; }
+}
+
+@media (max-width: 759px) {
+  .design-band, .symptom-block, .related { margin: 2.75rem 0; }
+  .ticker-strip { margin: 0.25rem -50vw 2.75rem; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); }
+  .cta-band { padding: 3.25rem 0; margin-top: 3rem; }
 }
 
 @media (max-width: 959px) {
