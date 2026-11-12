@@ -8,9 +8,9 @@ kind: service
 crumb: Drain cleaning
 eyebrow: Drains · Long Beach
 faqHeading: Drain decisions before a visit
-hero: tool-drain-machine
-heroAlt: A cable drain-cleaning machine on a wooden board in a basement.
-heroCaption: Cable drain-cleaning machine.
+hero: trade-bathroom-drain-repair
+heroAlt: Plumber clearing and repairing a bathroom sink drain assembly.
+heroCaption: Drain cleaning and trap assembly.
 heroKind: illustrative
 ---
 
@@ -26,9 +26,9 @@ A single slow bathroom sink, a toilet that clears and then fails again, or a kit
 If every fixture on a level gurgles, or a lower drain backs up when an upper one is used, the stoppage may be past the branch. That is when the [sewer guide](/services/sewer-repair/#sewer-lines) matters more than another pass with a short cable. Long Beach Utilities also asks to be called at [ (562) 570-2390 ](tel:+15625702390) for a sewer stoppage on the property and for sewage in the street. That utility call is not a referral, and it does not by itself mean the city owns the building-side pipe.
 
 :::figure
-base: trade-bathroom-drain-repair
-alt: Repairing sink drain in home bathroom.
-caption: Bathroom drain cleaning.
+base: trade-sink-plumbing-cabinet
+alt: Plumber accessing drain lines beneath a sink cabinet.
+caption: Under-sink drain access.
 kind: illustrative
 :::
 

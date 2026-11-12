@@ -31,9 +31,9 @@ The provider who accepts it is the one who must hold the right license for the w
 Read [how referrals work](/how-referrals-work/) for the compensation limit and the California licensing caution. Read [privacy](/privacy/) for what the pages collect. Read [contact](/contact/) for what to have ready, and for the utility numbers that belong to the city.
 
 :::figure
-base: lb-belmont-heights
-alt: Belmont Heights residential streetscape in Long Beach.
-caption: Long Beach neighborhood housing.
+base: trade-bright-kitchen-sink
+alt: Plumber repairing kitchen sink plumbing.
+caption: Residential kitchen plumbing service.
 kind: illustrative
 :::
 

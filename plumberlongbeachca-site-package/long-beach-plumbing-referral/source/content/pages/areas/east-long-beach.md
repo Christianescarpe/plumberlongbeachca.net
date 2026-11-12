@@ -31,9 +31,9 @@ A drain that backs up twice is worth a [camera](/services/sewer-repair/#in-line-
 Buried supply lines and yard work raise the same 811 and permit questions as elsewhere. Nothing published here says east Long Beach soils are worse. If someone offers that claim, ask for the boring or the camera, not the ZIP.
 
 :::figure
-base: lb-bluff-park-heights
-alt: Historic residential architecture in Long Beach.
-caption: Long Beach residential home.
+base: trade-bright-kitchen-sink
+alt: Plumber working on a bright residential kitchen sink.
+caption: East Long Beach kitchen plumbing.
 kind: illustrative
 :::
 

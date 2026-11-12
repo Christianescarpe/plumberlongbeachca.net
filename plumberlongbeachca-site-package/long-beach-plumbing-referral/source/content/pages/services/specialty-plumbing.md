@@ -42,9 +42,9 @@ Installation or replacement of treatment equipment is conditional. This preview 
 An install quote should name the equipment, where it sits, what it treats, the drain or electrical needs, and who maintains it. It should not claim the city water is contaminated. If you have a test from the utility or a lab, bring it. This site does not sample water and does not interpret a lab report. Replacement of an old softener is the same discipline: say what is there, what is failing, and what the new unit would change about the plumbing.
 
 :::figure
-base: tool-pipe-wrench
-alt: Pipe wrench on work surface.
-caption: Plumbing service wrench.
+base: trade-chrome-drain-pipes
+alt: Chrome drain and specialized plumbing connections installed beneath a sink.
+caption: Specialty fixture and drain connections.
 kind: illustrative
 :::
 

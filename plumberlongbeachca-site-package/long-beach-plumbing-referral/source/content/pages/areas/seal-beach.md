@@ -8,9 +8,9 @@ kind: city
 crumb: Seal Beach
 eyebrow: Nearby city · coverage unverified
 faqHeading: Seal Beach questions
-hero: lb-waterfront
-heroAlt: Coastal waterfront shoreline at sunset.
-heroCaption: Coastal community shoreline.
+hero: trade-bathroom-sink-repair
+heroAlt: Plumber repairing a bathroom sink with hand tools.
+heroCaption: Seal Beach residential plumbing service.
 heroKind: illustrative
 ---
 

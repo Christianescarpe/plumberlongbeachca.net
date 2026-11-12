@@ -11,7 +11,7 @@
   <meta property="og:description" content="Plumbing help for downtown Long Beach and Alamitos Beach, including Willmore, Drake Park, and condo access. ZIPs 90802 and 90813. Referral only.">
   <meta property="og:type" content="website">
   
-  <meta name="theme-color" content="#0e2438">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/site.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Long Beach Plumbing Referral","description":"Independent referral service that publishes plumbing decision guides and may connect callers with third-party providers. Not a plumbing contractor."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"},{"@type":"ListItem","position":2,"name":"Areas"},{"@type":"ListItem","position":3,"name":"Downtown and Alamitos Beach"}]}]}</script>
@@ -22,11 +22,14 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#12304c"/><path d="M8 23V12.5h9.5" fill="none" stroke="#F4E6D4" stroke-width="2.4" stroke-linecap="round"/><path d="M17.5 12.5H23V18" fill="none" stroke="#E08A4F" stroke-width="2.4" stroke-linecap="round"/><circle cx="23" cy="18" r="1.3" fill="#E08A4F"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#5097bc"/><path d="M8 23V12.5h9.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/><path d="M17.5 12.5H23V18" fill="none" stroke="#000000" stroke-width="2.4" stroke-linecap="round"/><circle cx="23" cy="18" r="1.5" fill="#ffffff"/></svg>
         <span><span class="brand-name">Long Beach Plumbing Referral</span><span class="brand-note">Plumbing referral · Long Beach</span></span>
       </a>
       <nav class="desktop-nav" aria-label="Primary"><a href="/services/">Services</a><a href="/areas/" aria-current="page">Areas</a><a href="/plumbing-guides/">Guides</a><a href="/how-referrals-work/">How referrals work</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
-      <div class="header-call"><button type="button" class="call-btn is-pending header-call-btn" disabled aria-disabled="true">Phone setup pending</button></div>
+      <div class="header-call"><div class="header-call-group">
+    <button type="button" class="call-btn is-pending header-call-btn" disabled aria-disabled="true">Phone setup pending</button>
+    <a class="header-circle-btn" href="/contact/" aria-label="Contact details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+  </div></div>
       <details class="mobile-nav">
         <summary>Menu</summary>
         <nav aria-label="Primary mobile"><a href="/services/">Services</a><a href="/areas/" aria-current="page">Areas</a><a href="/plumbing-guides/">Guides</a><a href="/how-referrals-work/">How referrals work</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
@@ -39,16 +42,26 @@
       <ul class="subnav"><li><a href="/areas/downtown-alamitos-beach/" aria-current="page">Downtown and Alamitos Beach</a></li><li><a href="/areas/belmont-shore-heights/">Belmont Shore and Heights</a></li><li><a href="/areas/bixby-knolls-california-heights/">Bixby Knolls and California Heights</a></li><li><a href="/areas/east-long-beach/">East Long Beach</a></li><li><a href="/areas/north-long-beach/">North Long Beach</a></li><li><a href="/areas/wrigley-west-central/">Wrigley and West-Central</a></li><li><a href="/areas/signal-hill/">Signal Hill</a></li><li><a href="/areas/lakewood/">Lakewood</a></li><li><a href="/areas/seal-beach/">Seal Beach</a></li><li><a href="/areas/los-alamitos/">Los Alamitos</a></li><li><a href="/areas/carson/">Carson</a></li></ul>
       <article data-wordcount>
 <header class="page-head has-media">
-  <div>
+  <div class="page-head-copy">
     <p class="eyebrow">Long Beach district guide</p>
     <h1>Plumbing Help in Downtown and Alamitos Beach</h1>
     <p class="lead">Downtown and Alamitos Beach are grouped here because callers use those names for the same south-west end of Long Beach, not because the City drew one plumbing district. The postal sections discussed on this page are 90802 and 90813. Both codes spill past any single neighborhood. An address, not the ZIP, tells you whether you are in a tower, a bungalow court, or a house on a lettered street.</p>
-    <div class="hero-actions"><button type="button" class="call-btn is-pending hero-call" disabled aria-disabled="true">Phone setup pending</button><p class="referral-line">Independent referral service. Calls may connect to third-party providers; availability and pricing vary.</p></div>
+    <div class="hero-actions">
+    <button type="button" class="call-btn is-pending hero-call" disabled aria-disabled="true">Phone setup pending</button>
+    <div class="hero-connector" aria-hidden="true">
+      <span class="connector-line"></span>
+      <span class="connector-circle"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+  <p class="referral-line">Independent referral service. Calls may connect to third-party providers; availability and pricing vary.</p>
+    <div class="pill-tags hero-pills"><a class="pill-tag" href="/services/">All Services</a><a class="pill-tag" href="/areas/">Service Areas</a><a class="pill-tag" href="/contact/">Call Readiness</a></div>
   </div>
   <figure class="photo">
-<img src="/assets/photos/lb-downtown-800.jpg" srcset="/assets/photos/lb-downtown-800.jpg 800w, /assets/photos/lb-downtown-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="1050" alt="Downtown Long Beach historic buildings and modern towers at night." loading="eager" fetchpriority="high" decoding="async">
+<img src="/assets/photos/trade-modern-bathroom-undersink-800.jpg" srcset="/assets/photos/trade-modern-bathroom-undersink-800.jpg 800w, /assets/photos/trade-modern-bathroom-undersink-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="931" alt="Plumber servicing under-sink lines in a modern apartment bathroom." loading="eager" fetchpriority="high" decoding="async">
 </figure>
 </header>
+
+
 <p>The City’s Drake Park / Willmore historic district is the housing fact that matters. It combines two earlier districts and sits inside Long Beach’s original 1881 street plan. The City says it holds the highest concentration of early-1900s housing in the city, both single-family houses and apartments, in Victorian, Craftsman, Mission, Prairie, Italian Renaissance, and Spanish Colonial Revival forms. The designated streets include Loma Vista Drive, Park Court, 4th Street, Magnolia Avenue, and an irregular edge back toward Nylic Court and 7th Street. That list is a preservation boundary. It is not a pipe-condition survey, and it does not cover every building in 90802.</p>
 <p>Alamitos Beach, closer to the shore, is a different pattern again: apartments, small lots, and houses that may or may not fall inside a historic overlay. Bluff Heights, which the City traces to the Alamitos Beach Townsite, is discussed on the <a href="/areas/belmont-shore-heights/">Belmont Shore and Heights</a> page because that is where the ordinance’s streets sit. Do not use this downtown page to describe Junipero, Redondo, or Ocean Boulevard’s bluff.</p>
 
@@ -57,7 +70,7 @@
 <p>A leak in a stacked building is often a permission problem before it is a plumbing problem. The wet ceiling may belong to a unit whose owner is not home. The shutoff may be in a closet the association controls. The lateral in the garage may serve more than one stack. The person calling should know whether they are the owner, the tenant, or the manager, and who can let a provider into the affected unit and the common area.</p>
 <p>This referral service does not contact building management and does not keep a list of downtown associations. If you are a tenant, ask the owner before you authorize a wall to be opened. If you manage the building, say so, and say whether the fixture is in a dwelling or in a common laundry. <a href="/services/commercial-plumbing/#commercial-plumbing">Commercial</a> calls are a different intake from a residence, even when they share 90802.</p>
 <figure class="photo">
-<img src="/assets/photos/lb-downtown-dusk-800.jpg" srcset="/assets/photos/lb-downtown-dusk-800.jpg 800w, /assets/photos/lb-downtown-dusk-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="864" alt="Downtown Long Beach skyline from the water." loading="lazy" decoding="async">
+<img src="/assets/photos/trade-bathroom-plumbing-fix-800.jpg" srcset="/assets/photos/trade-bathroom-plumbing-fix-800.jpg 800w, /assets/photos/trade-bathroom-plumbing-fix-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="934" alt="Plumber repairing bathroom sink plumbing." loading="lazy" decoding="async">
 </figure>
 <h2 id="private-and-shared">Private lines, shared lines, and the city main</h2>
 <p>For a Long Beach address, the utility’s lateral split still applies: building to property line on the owner, property line to the main as a shared section the owner maintains, and the main on the city. In a condo or a fourplex the “owner” may be an association or a group of owners. The <a href="/services/sewer-repair/#sewer-lines">sewer guide</a> walks through that language. It does not identify the cleanout in a particular lobby.</p>
@@ -81,10 +94,10 @@
 <section class="related">
 <h2>Guides that match these buildings</h2>
 <ul class="link-cards">
-<li><a href="/services/sewer-repair/#sewer-lines"><strong>Sewer responsibility</strong><span>the Long Beach lateral split</span></a></li>
-<li><a href="/services/leak-detection/#leaks-detected-repaired"><strong>Leak detection</strong><span>stains between stacked units</span></a></li>
-<li><a href="/services/fixtures-remodel-plumbing/#fixtures-installed"><strong>Fixtures</strong><span>replacements that need a shutoff the neighbor feels</span></a></li>
-<li><a href="/areas/belmont-shore-heights/"><strong>Belmont Shore and Heights</strong><span>the bluff districts this page does not cover</span></a></li>
+<li><a href="/services/sewer-repair/#sewer-lines"><strong>Sewer responsibility</strong><span>the Long Beach lateral split</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>
+<li><a href="/services/leak-detection/#leaks-detected-repaired"><strong>Leak detection</strong><span>stains between stacked units</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>
+<li><a href="/services/fixtures-remodel-plumbing/#fixtures-installed"><strong>Fixtures</strong><span>replacements that need a shutoff the neighbor feels</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>
+<li><a href="/areas/belmont-shore-heights/"><strong>Belmont Shore and Heights</strong><span>the bluff districts this page does not cover</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>
 </ul>
 </section>
 <section class="sources">
@@ -100,14 +113,16 @@
 <img src="/assets/photos/trade-kitchen-cabinet-sink-800.jpg" srcset="/assets/photos/trade-kitchen-cabinet-sink-800.jpg 800w, /assets/photos/trade-kitchen-cabinet-sink-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="931" alt="Repairing sink under kitchen cabinet." loading="lazy" decoding="async">
 </figure>
 
-<section class="page-end">
-  <h2>Ask about this job by phone</h2>
-  <p>Have the address and a short description of the problem. The provider sets the price and whether they can take the work.</p>
-  <div class="hero-actions"><button type="button" class="call-btn is-pending hero-call" disabled aria-disabled="true">Phone setup pending</button><p class="referral-line">Independent referral service. Calls may connect to third-party providers; availability and pricing vary.</p></div>
-</section>
 </article>
     </div>
   </main>
+  <section class="cta-band">
+  <div class="wrap">
+    <h2>Ask about this job by phone</h2>
+    <p>Have the address and a short description of the problem. The provider sets the price and whether they can take the work.</p>
+    <div class="cta-band-actions"><button type="button" class="call-btn is-pending cta-band-btn" disabled aria-disabled="true">Phone setup pending</button> <a class="cta-outline-link" href="/contact/">What to prepare &rarr;</a></div>
+  </div>
+</section>
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>

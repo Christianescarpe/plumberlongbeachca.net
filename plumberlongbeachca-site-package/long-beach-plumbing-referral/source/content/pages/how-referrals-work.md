@@ -27,9 +27,9 @@ On a live line, the opening should make the referral role obvious before any con
 If no provider accepts the ZIP, the building type, or the specialty, the call should end without a fake appointment. Conditional topics — wells, hydronic radiant, backflow testing, sump pumps, manufactured homes, pool shell work, jetting, trenchless methods — are explanations on the service pages, not items a script may promise. The [specialty guide](/services/specialty-plumbing/#well-pumps) is where those limits are written.
 
 :::figure
-base: tool-pipe-wrench
-alt: Two pipe wrenches on a clean background.
-caption: Plumbing pipe wrenches.
+base: service-index-overview
+alt: Plumbing tools, wrenches, and brass fittings arranged on a surface.
+caption: Plumbing service tools.
 kind: illustrative
 :::
 

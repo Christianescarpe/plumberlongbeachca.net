@@ -8,9 +8,9 @@ kind: service
 crumb: Water heaters
 eyebrow: Hot water · Long Beach
 faqHeading: Heater decisions before you replace anything
-hero: tool-tankless-heaters
-heroAlt: Two tankless water heaters mounted on an interior wall.
-heroCaption: Tankless water heaters.
+hero: trade-fixing-pipes-indoor
+heroAlt: Plumber working on indoor hot water piping and valves with a wrench.
+heroCaption: Hot water supply piping service.
 heroKind: illustrative
 ---
 
@@ -30,9 +30,9 @@ A standard heater in this guide means a storage tank: a vessel that holds heated
 Sediment and scale are maintenance questions, not a slogan. Because the local supply is moderately hard to hard, minerals are a fair topic to raise with the provider. They are not a measured grain count, and they are not proof the tank must be replaced. Ask what service would include and what it would not.
 
 :::figure
-base: tool-soldering-copper
-alt: Propane torch heating copper pipe for water heater supply.
-caption: Soldering copper supply lines.
+base: service-gas-line-plumbing
+alt: Plumber tightening threaded pipe connections with a heavy wrench.
+caption: Fuel and water supply piping.
 kind: illustrative
 :::
 
@@ -45,9 +45,9 @@ If you are a Long Beach gas customer and there is no gas odor, the utility tells
 Service, as opposed to a breakdown visit, means flushing, checking the anode where the design allows, and looking at vents and connections. Whether a referred provider offers a maintenance visit is unconfirmed. Ask for the list of tasks rather than the word “tune-up.”
 
 :::figure
-base: trade-fixing-pipes-indoor
-alt: Fixing indoor water piping with wrench.
-caption: Water heater pipe fittings.
+base: trade-construction-pipe-work
+alt: Plumber inspecting newly fitted building water lines.
+caption: Water line and heater fitting.
 kind: illustrative
 :::
 

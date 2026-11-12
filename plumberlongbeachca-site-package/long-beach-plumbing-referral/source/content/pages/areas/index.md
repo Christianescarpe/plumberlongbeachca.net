@@ -8,9 +8,9 @@ kind: index
 crumb: Areas
 eyebrow: Coverage index
 faqHeading: How to read this map
-hero: lb-waterfront
-heroAlt: Shoreline Village and the Long Beach waterfront at night.
-heroCaption: Long Beach waterfront.
+hero: trade-modern-bathroom-sink
+heroAlt: Plumber servicing modern residential bathroom sink plumbing.
+heroCaption: Long Beach residential plumbing.
 heroKind: illustrative
 ---
 
@@ -67,15 +67,15 @@ A: No. Each has its own guide because the municipal rules differ. Signal Hill is
 :::
 
 :::figure
-base: lb-downtown
-alt: Downtown Long Beach streetscape at night.
-caption: Downtown Long Beach.
+base: trade-kitchen-cabinet-sink
+alt: Plumber repairing under-cabinet kitchen sink lines.
+caption: Kitchen plumbing service.
 kind: illustrative
 :::
 
 :::figure
-base: lb-belmont-shore-heights
-alt: Spanish-style residential architecture in Long Beach.
-caption: Long Beach neighborhood architecture.
+base: trade-tiled-bathroom-sink
+alt: Plumber repairing sink fixtures in a tiled bathroom.
+caption: Bathroom fixture maintenance.
 kind: illustrative
 :::

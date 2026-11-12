@@ -29,9 +29,9 @@ The plumbing topics that most often belong here are a [leak](/services/leak-dete
 Do not assert that slope, oil history, or soil movement causes leaks on the hill. Those would be site investigations, not page content. California Heights, over the line in Long Beach, even notes that some bungalows were moved from Signal Hill in the 1920s. That is a Long Beach preservation fact. It is not a pipe inventory of either city.
 
 :::figure
-base: lb-downtown-dusk
-alt: View overlooking Long Beach coastal area.
-caption: Coastal hill perspective.
+base: trade-equipment-marbled-surface
+alt: Plumbing equipment and fittings arranged for service.
+caption: Plumbing service equipment.
 kind: illustrative
 :::
 

@@ -11,7 +11,7 @@
   <meta property="og:description" content="Pipe and water line repair in Long Beach, including pressure, private supply lines, and the meter boundary. No repipe promise. Referral only.">
   <meta property="og:type" content="website">
   
-  <meta name="theme-color" content="#0e2438">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/site.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Long Beach Plumbing Referral","description":"Independent referral service that publishes plumbing decision guides and may connect callers with third-party providers. Not a plumbing contractor."},{"@type":"Service","name":"Pipe and Water Line Repair in Long Beach","serviceType":"Referral introduction","provider":{"@type":"Organization","name":"Long Beach Plumbing Referral"},"description":"Pipe and water line repair in Long Beach, including pressure, private supply lines, and the meter boundary. No repipe promise. Referral only."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"},{"@type":"ListItem","position":2,"name":"Services"},{"@type":"ListItem","position":3,"name":"Pipes and water lines"}]}]}</script>
@@ -22,11 +22,14 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#12304c"/><path d="M8 23V12.5h9.5" fill="none" stroke="#F4E6D4" stroke-width="2.4" stroke-linecap="round"/><path d="M17.5 12.5H23V18" fill="none" stroke="#E08A4F" stroke-width="2.4" stroke-linecap="round"/><circle cx="23" cy="18" r="1.3" fill="#E08A4F"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#5097bc"/><path d="M8 23V12.5h9.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/><path d="M17.5 12.5H23V18" fill="none" stroke="#000000" stroke-width="2.4" stroke-linecap="round"/><circle cx="23" cy="18" r="1.5" fill="#ffffff"/></svg>
         <span><span class="brand-name">Long Beach Plumbing Referral</span><span class="brand-note">Plumbing referral · Long Beach</span></span>
       </a>
       <nav class="desktop-nav" aria-label="Primary"><a href="/services/" aria-current="page">Services</a><a href="/areas/">Areas</a><a href="/plumbing-guides/">Guides</a><a href="/how-referrals-work/">How referrals work</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
-      <div class="header-call"><button type="button" class="call-btn is-pending header-call-btn" disabled aria-disabled="true">Phone setup pending</button></div>
+      <div class="header-call"><div class="header-call-group">
+    <button type="button" class="call-btn is-pending header-call-btn" disabled aria-disabled="true">Phone setup pending</button>
+    <a class="header-circle-btn" href="/contact/" aria-label="Contact details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+  </div></div>
       <details class="mobile-nav">
         <summary>Menu</summary>
         <nav aria-label="Primary mobile"><a href="/services/" aria-current="page">Services</a><a href="/areas/">Areas</a><a href="/plumbing-guides/">Guides</a><a href="/how-referrals-work/">How referrals work</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
@@ -39,33 +42,43 @@
       <ul class="subnav"><li><a href="/services/drain-cleaning/">Drain cleaning</a></li><li><a href="/services/sewer-repair/">Sewer repair</a></li><li><a href="/services/leak-detection/">Leak detection</a></li><li><a href="/services/pipe-water-line-repair/" aria-current="page">Pipes and water lines</a></li><li><a href="/services/water-heaters/">Water heaters</a></li><li><a href="/services/fixtures-remodel-plumbing/">Fixtures and remodels</a></li><li><a href="/services/gas-line-plumbing/">Gas lines</a></li><li><a href="/services/commercial-plumbing/">Commercial</a></li><li><a href="/services/specialty-plumbing/">Specialty</a></li></ul>
       <article data-wordcount>
 <header class="page-head has-media">
-  <div>
+  <div class="page-head-copy">
     <p class="eyebrow">Piping · Long Beach</p>
     <h1>Pipe and Water Line Repair in Long Beach</h1>
     <p class="lead">Weak pressure, a supply line that leaks, or piping that needs repair starts with one question: is it one fixture, or the whole building? Long Beach Utilities delivers water to the meter. Piping after the meter is private. The age of the neighborhood does not tell you which pipe failed.</p>
-    <div class="hero-actions"><button type="button" class="call-btn is-pending hero-call" disabled aria-disabled="true">Phone setup pending</button><p class="referral-line">Independent referral service. Calls may connect to third-party providers; availability and pricing vary.</p></div>
+    <div class="hero-actions">
+    <button type="button" class="call-btn is-pending hero-call" disabled aria-disabled="true">Phone setup pending</button>
+    <div class="hero-connector" aria-hidden="true">
+      <span class="connector-line"></span>
+      <span class="connector-circle"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+  <p class="referral-line">Independent referral service. Calls may connect to third-party providers; availability and pricing vary.</p>
+    <div class="pill-tags hero-pills"><a class="pill-tag" href="/services/">All Services</a><a class="pill-tag" href="/areas/">Service Areas</a><a class="pill-tag" href="/contact/">Call Readiness</a></div>
   </div>
   <figure class="photo">
-<img src="/assets/photos/tool-pipe-wrench-800.jpg" srcset="/assets/photos/tool-pipe-wrench-800.jpg 800w, /assets/photos/tool-pipe-wrench-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="893" alt="Two pipe wrenches on a clean background." loading="eager" fetchpriority="high" decoding="async">
+<img src="/assets/photos/trade-wrench-pipe-adjustment-800.jpg" srcset="/assets/photos/trade-wrench-pipe-adjustment-800.jpg 800w, /assets/photos/trade-wrench-pipe-adjustment-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="787" alt="Plumber adjusting residential water supply pipes with an adjustable wrench." loading="eager" fetchpriority="high" decoding="async">
 </figure>
 </header>
+
+
 <figure class="diagram">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" role="img" aria-label="Diagram of the city water main, meter, and private house piping">
-  <rect x="1" y="1" width="358" height="228" rx="16" fill="#fffdf9" stroke="#e2d9cc"/>
+  <rect x="1" y="1" width="358" height="228" rx="16" fill="#0b0e12" stroke="#1f2730"/>
   
-      <text x="18" y="28" fill="#0e2438" font-family="Fraunces, Georgia, serif" font-size="15">Water, up to the meter and after it</text>
-      <rect x="18" y="58" width="90" height="36" rx="8" fill="#1d5e66"/>
-      <text x="63" y="81" text-anchor="middle" fill="#f7f2ea" font-family="Source Sans 3, sans-serif" font-size="12">City main</text>
-      <line x1="108" y1="76" x2="168" y2="76" stroke="#1d5e66" stroke-width="6"/>
-      <rect x="168" y="58" width="70" height="36" rx="8" fill="#0e2438"/>
-      <text x="203" y="81" text-anchor="middle" fill="#f7f2ea" font-family="Source Sans 3, sans-serif" font-size="12">Meter</text>
-      <line x1="238" y1="76" x2="300" y2="76" stroke="#a85b32" stroke-width="6"/>
-      <rect x="300" y="52" width="42" height="48" rx="6" fill="#a85b32"/>
-      <text x="321" y="80" text-anchor="middle" fill="#fff" font-family="Source Sans 3, sans-serif" font-size="11">Home</text>
-      <text x="18" y="128" fill="#1d5e66" font-family="Source Sans 3, sans-serif" font-size="12">Utility side: main and service to the meter.</text>
-      <text x="18" y="150" fill="#7a3d1c" font-family="Source Sans 3, sans-serif" font-size="12">Private side: piping on the property.</text>
-      <text x="18" y="182" fill="#3e4a57" font-family="Source Sans 3, sans-serif" font-size="12">A city water main is not a private repair.</text>
-      <text x="18" y="204" fill="#3e4a57" font-family="Source Sans 3, sans-serif" font-size="12">Buried private pipe still needs a locate and permit check.</text>
+      <text x="18" y="28" fill="#ffffff" font-family="Source Sans 3, sans-serif" font-weight="700" font-size="14">Water, up to the meter and after it</text>
+      <rect x="18" y="58" width="90" height="36" rx="8" fill="#16212c" stroke="#5097bc"/>
+      <text x="63" y="81" text-anchor="middle" fill="#ffffff" font-family="Source Sans 3, sans-serif" font-size="12">City main</text>
+      <line x1="108" y1="76" x2="168" y2="76" stroke="#5097bc" stroke-width="6"/>
+      <rect x="168" y="58" width="70" height="36" rx="8" fill="#11161d" stroke="#ffffff" stroke-opacity="0.3"/>
+      <text x="203" y="81" text-anchor="middle" fill="#ffffff" font-family="Source Sans 3, sans-serif" font-size="12">Meter</text>
+      <line x1="238" y1="76" x2="300" y2="76" stroke="#69b2d8" stroke-width="6"/>
+      <rect x="300" y="52" width="42" height="48" rx="6" fill="#5097bc"/>
+      <text x="321" y="80" text-anchor="middle" fill="#ffffff" font-family="Source Sans 3, sans-serif" font-weight="700" font-size="11">Home</text>
+      <text x="18" y="128" fill="#69b2d8" font-family="Source Sans 3, sans-serif" font-size="12">Utility side: main and service to the meter.</text>
+      <text x="18" y="150" fill="#e2e8f0" font-family="Source Sans 3, sans-serif" font-size="12">Private side: piping on the property.</text>
+      <text x="18" y="182" fill="#94a0ad" font-family="Source Sans 3, sans-serif" font-size="12">A city water main is not a private repair.</text>
+      <text x="18" y="204" fill="#94a0ad" font-family="Source Sans 3, sans-serif" font-size="12">Buried private pipe still needs a locate and permit check.</text>
     
 </svg>
 <figcaption><span class="label">Private supply line and the utility main</span>Original diagram of the usual water-service boundary. Long Beach Utilities says it delivers water to the meter. The pipe after that is a private question. Confirm the meter location on site. Original illustration for this site, November 8, 2026.</figcaption>
@@ -76,7 +89,7 @@
 <p>A repair replaces a failed fitting or a short run the provider can stand behind. A repipe replaces a larger share of the piping because the material, the leak history, or the layout no longer supports patching. Those are different approvals. A single pinhole is not a whole-house repipe, and a house full of layered patches is not automatically solved by one more coupling.</p>
 <p>Ask what material is there now, what would replace it, and which portions would stay. Ask whether the work is exposed in a crawlspace or buried. Ask who opens walls and who patches them. This referral service does not select copper, PEX, or any other material for you, and it does not claim that a 1920s house in <a href="/areas/bixby-knolls-california-heights/">California Heights</a> still has the pipe it was built with. Remodels change that. Only a look at the house changes the answer.</p>
 <figure class="photo">
-<img src="/assets/photos/trade-wrench-pipe-adjustment-800.jpg" srcset="/assets/photos/trade-wrench-pipe-adjustment-800.jpg 800w, /assets/photos/trade-wrench-pipe-adjustment-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="787" alt="Adjusting water pipes with adjustable wrench." loading="lazy" decoding="async">
+<img src="/assets/photos/trade-fixing-pipes-indoor-800.jpg" srcset="/assets/photos/trade-fixing-pipes-indoor-800.jpg 800w, /assets/photos/trade-fixing-pipes-indoor-1600.jpg 1400w" sizes="(min-width: 960px) 640px, 100vw" width="1400" height="933" alt="Technician tightening indoor water supply pipe connections." loading="lazy" decoding="async">
 </figure>
 <h2 id="water-lines-installed-repaired">Water Lines Installed &amp; Repaired</h2>
 <p>A private water line is the piping that carries water after the meter to the building and between fixtures. Installing a new run, for an addition or a relocated meter, is not the same permit conversation as repairing a leak in an existing run. The <a href="/services/fixtures-remodel-plumbing/#plumbing-for-remodel-or-addition">fixture and remodel guide</a> covers the fixture end. This page covers the line itself.</p>
@@ -120,10 +133,10 @@
 <section class="related">
 <h2>Keep the pipe question specific</h2>
 <ul class="link-cards">
-<li><a href="/services/leak-detection/#plumbing-inspection"><strong>Leak detection</strong><span>find a zone before you approve a repipe</span></a></li>
-<li><a href="/services/sewer-repair/#sewer-lines"><strong>Sewer repair</strong><span>laterals follow a different responsibility map</span></a></li>
-<li><a href="/areas/east-long-beach/"><strong>East Long Beach</strong><span>pressure versus a single fixture, without assuming the housing stock matches</span></a></li>
-<li><a href="/plumbing-guides/#single-tap-versus-whole-home-pressure"><strong>Pressure, one tap or the whole house</strong><span>the short split</span></a></li>
+<li><a href="/services/leak-detection/#plumbing-inspection"><strong>Leak detection</strong><span>find a zone before you approve a repipe</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>
+<li><a href="/services/sewer-repair/#sewer-lines"><strong>Sewer repair</strong><span>laterals follow a different responsibility map</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>
+<li><a href="/areas/east-long-beach/"><strong>East Long Beach</strong><span>pressure versus a single fixture, without assuming the housing stock matches</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>
+<li><a href="/plumbing-guides/#single-tap-versus-whole-home-pressure"><strong>Pressure, one tap or the whole house</strong><span>the short split</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>
 </ul>
 </section>
 <section class="faq">
@@ -160,14 +173,16 @@
 <p>Checked November 8, 2026, unless a source itself is older. Official pages can change. Nothing here is a permit determination, a coverage promise, or legal advice.</p>
 </section>
 
-<section class="page-end">
-  <h2>Ask about this job by phone</h2>
-  <p>Have the address and a short description of the problem. The provider sets the price and whether they can take the work.</p>
-  <div class="hero-actions"><button type="button" class="call-btn is-pending hero-call" disabled aria-disabled="true">Phone setup pending</button><p class="referral-line">Independent referral service. Calls may connect to third-party providers; availability and pricing vary.</p></div>
-</section>
 </article>
     </div>
   </main>
+  <section class="cta-band">
+  <div class="wrap">
+    <h2>Ask about this job by phone</h2>
+    <p>Have the address and a short description of the problem. The provider sets the price and whether they can take the work.</p>
+    <div class="cta-band-actions"><button type="button" class="call-btn is-pending cta-band-btn" disabled aria-disabled="true">Phone setup pending</button> <a class="cta-outline-link" href="/contact/">What to prepare &rarr;</a></div>
+  </div>
+</section>
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>

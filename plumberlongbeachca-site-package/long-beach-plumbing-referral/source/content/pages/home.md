@@ -8,9 +8,9 @@ kind: home
 crumb: Home
 eyebrow: Long Beach, California
 faqHeading: Questions callers ask first
-hero: tool-soldering-copper
-heroAlt: A propane torch heating a copper pipe joint so solder can flow into the fitting.
-heroCaption: Copper water pipe being soldered.
+hero: trade-repair-wrench-home
+heroAlt: Plumber repairing residential water piping with an adjustable wrench.
+heroCaption: Residential plumbing repair.
 heroKind: illustrative
 ---
 
@@ -42,9 +42,9 @@ This is the page for general plumbing help in Long Beach. A single clog, a sewer
 If you smell gas, leave and call Long Beach Utilities or 911 from a safe place. If sewage is in the street or a manhole is overflowing, call the utility water and sewer line. Those are city emergency numbers, printed in the safety note. A plumbing referral is for private property work a contractor can quote.
 
 :::figure
-base: lb-downtown-dusk
-alt: Downtown Long Beach skyline and marina at dusk, photographed from the Queen Mary.
-caption: Downtown Long Beach from the water.
+base: trade-construction-pipe-work
+alt: Plumber installing and inspecting pipes on a building site.
+caption: Commercial and residential pipe work.
 kind: illustrative
 :::
 

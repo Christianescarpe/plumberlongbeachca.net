@@ -8,9 +8,9 @@ kind: district
 crumb: Bixby Knolls and California Heights
 eyebrow: Long Beach district guide
 faqHeading: Bixby Knolls and California Heights questions
-hero: lb-california-heights-spanish
-heroAlt: Spanish Colonial Revival house in California Heights, Long Beach.
-heroCaption: California Heights home.
+hero: trade-fixtures-beneath-sink
+heroAlt: Plumbing valves and drain lines beneath ceramic sinks.
+heroCaption: California Heights fixture connections.
 heroKind: illustrative
 ---
 
@@ -29,9 +29,9 @@ Repair versus replacement is the same discipline as everywhere else in Long Beac
 Pressure that is weak at one lavatory and fine at the hose bib is a [fixture or branch](/services/pipe-water-line-repair/#water-pressure-problems) question. Pressure that is weak on the whole block is a utility question at [(562) 570-2390](tel:+15625702390) before it is a private repipe. 90807 does not change the meter boundary. Long Beach Utilities still describes its water responsibility as ending at the meter.
 
 :::figure
-base: lb-belmont-heights
-alt: Belmont Heights residential streetscape.
-caption: Long Beach historic district.
+base: trade-sink-pipes-home
+alt: Plumber inspecting under-sink water pipes at home.
+caption: Home pipe inspection.
 kind: illustrative
 :::
 

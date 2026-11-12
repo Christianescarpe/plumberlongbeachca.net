@@ -8,9 +8,9 @@ kind: service
 crumb: Pipes and water lines
 eyebrow: Piping · Long Beach
 faqHeading: Pipe and pressure questions
-hero: tool-pipe-wrench
-heroAlt: Two pipe wrenches on a clean background.
-heroCaption: Pipe wrenches.
+hero: trade-wrench-pipe-adjustment
+heroAlt: Plumber adjusting residential water supply pipes with an adjustable wrench.
+heroCaption: Water line pipe adjustment.
 heroKind: illustrative
 ---
 
@@ -27,9 +27,9 @@ A repair replaces a failed fitting or a short run the provider can stand behind.
 Ask what material is there now, what would replace it, and which portions would stay. Ask whether the work is exposed in a crawlspace or buried. Ask who opens walls and who patches them. This referral service does not select copper, PEX, or any other material for you, and it does not claim that a 1920s house in [California Heights](/areas/bixby-knolls-california-heights/) still has the pipe it was built with. Remodels change that. Only a look at the house changes the answer.
 
 :::figure
-base: trade-wrench-pipe-adjustment
-alt: Adjusting water pipes with adjustable wrench.
-caption: Water pipe adjustment.
+base: trade-fixing-pipes-indoor
+alt: Technician tightening indoor water supply pipe connections.
+caption: Indoor supply line repair.
 kind: illustrative
 :::
 

@@ -8,9 +8,9 @@ kind: district
 crumb: Downtown and Alamitos Beach
 eyebrow: Long Beach district guide
 faqHeading: Downtown and Alamitos Beach questions
-hero: lb-downtown
-heroAlt: Downtown Long Beach historic buildings and modern towers at night.
-heroCaption: Downtown Long Beach.
+hero: trade-modern-bathroom-undersink
+heroAlt: Plumber servicing under-sink lines in a modern apartment bathroom.
+heroCaption: Downtown apartment and condo plumbing.
 heroKind: illustrative
 ---
 
@@ -27,9 +27,9 @@ A leak in a stacked building is often a permission problem before it is a plumbi
 This referral service does not contact building management and does not keep a list of downtown associations. If you are a tenant, ask the owner before you authorize a wall to be opened. If you manage the building, say so, and say whether the fixture is in a dwelling or in a common laundry. [Commercial](/services/commercial-plumbing/#commercial-plumbing) calls are a different intake from a residence, even when they share 90802.
 
 :::figure
-base: lb-downtown-dusk
-alt: Downtown Long Beach skyline from the water.
-caption: Downtown Long Beach shoreline.
+base: trade-bathroom-plumbing-fix
+alt: Plumber repairing bathroom sink plumbing.
+caption: Multi-unit fixture repair.
 kind: illustrative
 :::
 

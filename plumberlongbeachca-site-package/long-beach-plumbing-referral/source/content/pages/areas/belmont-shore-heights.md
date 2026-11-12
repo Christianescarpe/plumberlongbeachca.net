@@ -8,9 +8,9 @@ kind: district
 crumb: Belmont Shore and Heights
 eyebrow: Long Beach district guide
 faqHeading: Shore and Heights questions
-hero: lb-belmont-shore-heights
-heroAlt: Spanish-style house in Belmont Shore, Long Beach.
-heroCaption: Belmont Shore architecture.
+hero: trade-shower-plumbing-repair
+heroAlt: Plumber repairing shower valves and plumbing fixtures.
+heroCaption: Belmont Shore residential fixture service.
 heroKind: illustrative
 ---
 
@@ -27,9 +27,9 @@ Bluff Park is the ocean-bluff neighborhood the City designated in 1982, with lar
 Those boundaries are for preservation. A plumbing visit does not become a historic project because the house is old. It becomes one if the scope changes something the ordinance covers. Exterior equipment, a new vent, or a street-facing alteration is the moment to call historic preservation at [(562) 570-6194](tel:+15625706194) and the [permit center](https://longbeach.gov/lbcd/building/permit-center/). An interior valve is a different question. Ask about the scope you have.
 
 :::figure
-base: lb-bluff-park-heights
-alt: Bluff Park historic house in Long Beach.
-caption: Bluff Park historic home.
+base: trade-chrome-drain-pipes
+alt: Chrome sink drain plumbing installed in a residential bathroom.
+caption: Coastal home drain piping.
 kind: illustrative
 :::
 

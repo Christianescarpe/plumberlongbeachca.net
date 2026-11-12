@@ -1,7 +1,7 @@
 [
   {
     "path": "/about/",
-    "words": 670,
+    "words": 668,
     "faqs": [
       {
         "q": "Are you a Long Beach plumbing company?",
@@ -22,7 +22,7 @@
   },
   {
     "path": "/areas/belmont-shore-heights/",
-    "words": 901,
+    "words": 903,
     "faqs": [
       {
         "q": "We want to upgrade fixtures in an older Heights house. Where do we start?",
@@ -43,7 +43,7 @@
   },
   {
     "path": "/areas/bixby-knolls-california-heights/",
-    "words": 904,
+    "words": 906,
     "faqs": [
       {
         "q": "Does the age of a California Heights house establish the pipe?",
@@ -85,7 +85,7 @@
   },
   {
     "path": "/areas/downtown-alamitos-beach/",
-    "words": 941,
+    "words": 938,
     "faqs": [
       {
         "q": "Is the building’s drain line private or shared?",
@@ -106,7 +106,7 @@
   },
   {
     "path": "/areas/east-long-beach/",
-    "words": 969,
+    "words": 972,
     "faqs": [
       {
         "q": "The shower is weak and the hose bib is fine. Is the whole line bad?",
@@ -127,7 +127,7 @@
   },
   {
     "path": "/areas/",
-    "words": 804,
+    "words": 805,
     "faqs": [
       {
         "q": "Is a ZIP code enough to know I am covered?",
@@ -232,7 +232,7 @@
   },
   {
     "path": "/areas/signal-hill/",
-    "words": 872,
+    "words": 873,
     "faqs": [
       {
         "q": "Is my address covered because it is next to Long Beach?",
@@ -295,7 +295,7 @@
   },
   {
     "path": "/",
-    "words": 1052,
+    "words": 1047,
     "faqs": [
       {
         "q": "Are you the plumber who would do the work?",
@@ -326,7 +326,7 @@
   },
   {
     "path": "/how-referrals-work/",
-    "words": 876,
+    "words": 879,
     "faqs": [
       {
         "q": "Do you negotiate the price with the plumber?",
@@ -425,7 +425,7 @@
   },
   {
     "path": "/services/drain-cleaning/",
-    "words": 1406,
+    "words": 1408,
     "faqs": [
       {
         "q": "Should the first visit be a snake or a jet?",
@@ -549,7 +549,7 @@
   },
   {
     "path": "/services/pipe-water-line-repair/",
-    "words": 1514,
+    "words": 1516,
     "faqs": [
       {
         "q": "The pressure dropped. Is the line failing?",
@@ -611,7 +611,7 @@
   },
   {
     "path": "/services/specialty-plumbing/",
-    "words": 1932,
+    "words": 1939,
     "faqs": [
       {
         "q": "Which specialty items can I assume are available?",
@@ -647,7 +647,7 @@
   },
   {
     "path": "/services/water-heaters/",
-    "words": 1513,
+    "words": 1516,
     "faqs": [
       {
         "q": "Should a water heater be repaired or replaced?",

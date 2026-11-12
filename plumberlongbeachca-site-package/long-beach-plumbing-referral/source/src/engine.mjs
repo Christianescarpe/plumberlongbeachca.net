@@ -320,7 +320,8 @@ function renderFence(block, config, photos, faqHeading) {
       raw = lines.slice(1).join("\n");
     }
     const cards = cardItems(raw.split("\n").filter((line) => line.trim()).map((line) => line.replace(/^- /, "")));
-    return `<section class="${block.fence === "symptoms" ? "symptom-block" : "related"}">\n<h2>${escapeHtml(label)}</h2>\n<ul class="link-cards">\n${cards.map((card) => `<li><a href="${escapeHtml(card.href)}"><strong>${escapeHtml(card.label)}</strong><span>${inline(card.text, config)}</span></a></li>`).join("\n")}\n</ul>\n</section>`;
+    const iconSvg = `<span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>`;
+    return `<section class="${block.fence === "symptoms" ? "symptom-block" : "related"}">\n<h2>${escapeHtml(label)}</h2>\n<ul class="link-cards">\n${cards.map((card) => `<li><a href="${escapeHtml(card.href)}">${block.fence === "symptoms" ? iconSvg : ""}<strong>${escapeHtml(card.label)}</strong><span>${inline(card.text, config)}</span><span class="card-more" aria-hidden="true">Explore &rarr;</span></a></li>`).join("\n")}\n</ul>\n</section>`;
   }
   if (block.fence === "sources") {
     const items = block.raw.split("\n").filter((line) => line.trim()).map((line) => line.replace(/^- /, ""));
@@ -442,11 +443,21 @@ function callControl(config, className) {
 }
 
 function heroActions(config) {
-  return `<div class="hero-actions">${callControl(config, "hero-call")}<p class="referral-line">${REFERRAL_LINE}</p></div>`;
+  return `<div class="hero-actions">
+    ${callControl(config, "hero-call")}
+    <div class="hero-connector" aria-hidden="true">
+      <span class="connector-line"></span>
+      <span class="connector-circle"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+  <p class="referral-line">${REFERRAL_LINE}</p>`;
 }
 
 function headerCall(config) {
-  return callControl(config, "header-call-btn");
+  return `<div class="header-call-group">
+    ${callControl(config, "header-call-btn")}
+    <a class="header-circle-btn" href="/contact/" aria-label="Contact details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+  </div>`;
 }
 
 function stickyCall(config) {
@@ -485,6 +496,117 @@ function splitIntro(blocks) {
   return { intro, rest };
 }
 
+function photoImgTag(base, alt, photos, eager = false) {
+  const meta = photos[base];
+  if (!meta) throw new Error(`Unknown photo ${base}`);
+  const src800 = `/assets/photos/${meta.filename_800}`;
+  const src1600 = `/assets/photos/${meta.filename_1600}`;
+  return `<img src="${src800}" srcset="${src800} ${meta.width_800}w, ${src1600} ${meta.width_1600}w" sizes="(min-width: 960px) 640px, 100vw" width="${meta.width_1600}" height="${meta.height_1600}" alt="${escapeHtml(alt)}" ${eager ? `loading="eager" fetchpriority="high"` : `loading="lazy"`} decoding="async">`;
+}
+
+function tickerStrip() {
+  const items = [
+    "Drain Cleaning",
+    "Sewer Line Repair",
+    "Leak Detection",
+    "Water Heaters",
+    "Pipe & Water Lines",
+    "Fixtures & Remodels",
+    "Gas Line Plumbing",
+    "Commercial Plumbing",
+    "Long Beach, CA",
+  ];
+  const itemHtml = items.map((label) => `<span class="ticker-item"><span class="ticker-dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>${escapeHtml(label)}</span>`).join("");
+  return `<div class="ticker-strip" aria-hidden="true"><div class="ticker-track">${itemHtml}${itemHtml}</div></div>`;
+}
+
+function homeShowcaseSections(photos, config) {
+  const galleryCards = [
+    { base: "service-index-overview", title: "Tools & Inspection", href: "/services/", alt: "Plumbing wrenches, brass valves, and pipe fittings." },
+    { base: "service-leak-detection", title: "Leak Detection", href: "/services/leak-detection/", alt: "Plumber using pliers to inspect and fix an under-sink leak." },
+    { base: "service-fixtures-remodel", title: "Fixtures & Remodels", href: "/services/fixtures-remodel-plumbing/", alt: "Plumber installing and tightening a bathroom faucet." },
+    { base: "service-commercial-plumbing", title: "Commercial Piping", href: "/services/commercial-plumbing/", alt: "Plumber working on industrial piping in a mechanical room." },
+  ];
+
+  return `
+<section class="design-band showcase-grid-section">
+  <div class="section-head-center">
+    <p class="eyebrow">Long Beach Plumbing Scopes</p>
+    <h2>The trades behind every call</h2>
+  </div>
+  <div class="showcase-grid">
+    ${galleryCards.map((c) => `<a class="showcase-card" href="${c.href}">
+      <div class="showcase-img">${photoImgTag(c.base, c.alt, photos)}</div>
+      <span class="showcase-label">${escapeHtml(c.title)} <span aria-hidden="true">&rarr;</span></span>
+    </a>`).join("")}
+  </div>
+</section>
+
+<section class="design-band split-showcase">
+  <div class="section-head-left">
+    <p class="eyebrow">Before You Call</p>
+    <h2>Delivering clear intake across Long Beach</h2>
+  </div>
+  <div class="split-showcase-grid">
+    <div class="split-tall-img">${photoImgTag("service-sewer-drain-pipe", "Technician inspecting drainage and waste lines.", photos)}</div>
+    <div class="split-right-col">
+      <div class="split-top-row">
+        <div class="split-copy">
+          <p>This site helps you sort the plumbing symptom, confirm who can authorize entry, and separate private property repairs from Long Beach Utilities emergencies before placing a call.</p>
+          <a class="blue-pill-btn" href="/services/">Browse service guides</a>
+        </div>
+        <div class="split-small-img">${photoImgTag("service-gas-line-plumbing", "Plumber tightening threaded iron pipe fittings.", photos)}</div>
+      </div>
+      <div class="split-divider" aria-hidden="true">
+        <svg viewBox="0 0 420 28" fill="none" preserveAspectRatio="none"><path d="M0 14 H140 L170 24 H420" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/></svg>
+      </div>
+      <div class="split-bottom-row">
+        <p class="split-note">Prepare the street address, ZIP code, and property ownership status.</p>
+        <div class="pill-tags">
+          <a class="pill-tag" href="/services/drain-cleaning/">Drain Cleaning</a>
+          <a class="pill-tag" href="/services/water-heaters/">Water Heaters</a>
+          <a class="pill-tag" href="/areas/">11 Long Beach ZIPs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="design-band spotlight-section">
+  <div class="section-head-left">
+    <p class="eyebrow">How It Works</p>
+    <h2>Independent providers, direct quotes</h2>
+  </div>
+  <div class="spotlight-grid">
+    <div class="spotlight-photos">
+      <div class="spotlight-img-sm">${photoImgTag("guide-plumbing-inspection", "Plumber with toolbox conducting a plumbing inspection.", photos)}</div>
+      <div class="spotlight-img-md">${photoImgTag("service-specialty-filtration", "Plumber fitting a residential water filtration system.", photos)}</div>
+    </div>
+    <div class="spotlight-quote">
+      <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+      <p>We are an independent referral service, not a plumbing contractor and not a city department. When a call is connected, the receiving provider decides whether to take the job, sets the written price, and handles licensing and permits directly with you.</p>
+      <div class="spotlight-meta">
+        <div>
+          <strong>Long Beach Plumbing Referral</strong>
+          <span>Phone-only referral &middot; No online forms</span>
+        </div>
+        <div class="spotlight-actions">
+          <a class="circle-arrow-btn" href="/how-referrals-work/" aria-label="How referrals work">&rarr;</a>
+          <a class="circle-arrow-btn" href="/about/" aria-label="About this service">&rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="design-band stats-band" aria-label="Coverage facts">
+  <div class="stat-item"><span class="stat-num">11</span><span class="stat-label">Long Beach Residential ZIPs</span></div>
+  <div class="stat-item"><span class="stat-num">9</span><span class="stat-label">Core Service Guides</span></div>
+  <div class="stat-item"><span class="stat-num">28</span><span class="stat-label">Dedicated Local Pages</span></div>
+  <div class="stat-item"><span class="stat-num">44</span><span class="stat-label">Plumbing Topics Mapped</span></div>
+</section>`;
+}
+
 export function renderDocument(doc, config, photos) {
   const front = doc.front;
   for (const key of ["path", "title", "h1", "description", "intent", "kind", "crumb"]) {
@@ -511,25 +633,34 @@ export function renderDocument(doc, config, photos) {
   const ogUrl = config.mode === "production" ? `<meta property="og:url" content="https://${escapeHtml(config.domain.hostname)}${escapeHtml(front.path)}">` : "";
   const banner = "";
   const currentNav = primaryNav.find(([, href]) => front.path === href || (href !== "/" && front.path.startsWith(href)))?.[1] || "";
+  const isHome = front.path === "/";
+  const heroPills = isHome
+    ? `<div class="pill-tags hero-pills"><a class="pill-tag" href="/services/drain-cleaning/">Drains &amp; Sewers</a><a class="pill-tag" href="/services/leak-detection/">Leaks &amp; Pipes</a><a class="pill-tag" href="/services/water-heaters/">Water Heaters</a></div>`
+    : `<div class="pill-tags hero-pills"><a class="pill-tag" href="/services/">All Services</a><a class="pill-tag" href="/areas/">Service Areas</a><a class="pill-tag" href="/contact/">Call Readiness</a></div>`;
   const article = `<article data-wordcount>
 <header class="page-head${hero ? " has-media" : ""}">
-  <div>
+  <div class="page-head-copy">
     ${front.eyebrow ? `<p class="eyebrow">${escapeHtml(front.eyebrow)}</p>` : ""}
     <h1>${escapeHtml(front.h1)}</h1>
     ${lead ? `<p class="lead">${inline(lead.text, config)}</p>` : ""}
     ${heroActions(config)}
+    ${heroPills}
   </div>
   ${hero}
 </header>
+${isHome ? tickerStrip() : ""}
+${isHome ? homeShowcaseSections(photos, config) : ""}
 ${renderFlow(introRest, config, photos, faqHeading)}
 ${toc(rest)}
 ${renderFlow(rest, config, photos, faqHeading)}
-<section class="page-end">
-  <h2>Ask about this job by phone</h2>
-  <p>Have the address and a short description of the problem. The provider sets the price and whether they can take the work.</p>
-  ${heroActions(config)}
-</section>
 </article>`;
+  const ctaBand = `<section class="cta-band">
+  <div class="wrap">
+    <h2>Ask about this job by phone</h2>
+    <p>Have the address and a short description of the problem. The provider sets the price and whether they can take the work.</p>
+    <div class="cta-band-actions">${callControl(config, "cta-band-btn")} <a class="cta-outline-link" href="/contact/">What to prepare &rarr;</a></div>
+  </div>
+</section>`;
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -543,7 +674,7 @@ ${renderFlow(rest, config, photos, faqHeading)}
   <meta property="og:description" content="${escapeHtml(front.description)}">
   <meta property="og:type" content="website">
   ${ogUrl}
-  <meta name="theme-color" content="#0e2438">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/site.css">
   <script type="application/ld+json">${jsonLd(doc, config)}</script>
@@ -554,7 +685,7 @@ ${renderFlow(rest, config, photos, faqHeading)}
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#12304c"/><path d="M8 23V12.5h9.5" fill="none" stroke="#F4E6D4" stroke-width="2.4" stroke-linecap="round"/><path d="M17.5 12.5H23V18" fill="none" stroke="#E08A4F" stroke-width="2.4" stroke-linecap="round"/><circle cx="23" cy="18" r="1.3" fill="#E08A4F"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#5097bc"/><path d="M8 23V12.5h9.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/><path d="M17.5 12.5H23V18" fill="none" stroke="#000000" stroke-width="2.4" stroke-linecap="round"/><circle cx="23" cy="18" r="1.5" fill="#ffffff"/></svg>
         <span><span class="brand-name">${escapeHtml(config.brand.publicName)}</span><span class="brand-note">Plumbing referral · Long Beach</span></span>
       </a>
       ${navHtml(primaryNav, currentNav, "Primary").replace("<nav", `<nav class="desktop-nav"`)}
@@ -572,6 +703,7 @@ ${renderFlow(rest, config, photos, faqHeading)}
       ${article}
     </div>
   </main>
+  ${ctaBand}
   ${footer(config)}
   ${stickyCall(config)}
   <script src="/assets/site.js" defer></script>
