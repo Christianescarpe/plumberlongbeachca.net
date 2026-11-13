@@ -41,6 +41,13 @@ Use the guides for the symptom in the meantime. A stopped kitchen sink is [drain
 
 Do not infer pipe material from the 1928 Grant houses, and do not infer it from a 1950s street either. [Bixby Knolls and California Heights](/areas/bixby-knolls-california-heights/) have their own 1920s record. It does not travel north with the ZIP.
 
+:::figure
+base: trade-wrench-pipe-adjustment
+alt: Adjusting water pipes with adjustable wrench.
+caption: Water line adjustments.
+kind: illustrative
+:::
+
 :::faq
 Q: I rent north of Del Amo. Can I be the person who hires the plumber?
 A: You can start the description. The owner or the manager usually has to authorize work that opens finishes, replaces equipment, or affects a shared line. Say that you are the tenant and have the owner’s permission if you do. Have the unit number and a way for the provider to reach the person who can approve a change in scope. This site does not call landlords and does not take a request form.
@@ -64,11 +71,4 @@ Heading: Symptom guides for 90805
 - [Grant Neighborhood Historic District](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — the 6000 block of Walnut, 17 contributing properties, designated in 2019.
 - [Long Beach Utilities — customer service](https://www.lbutilities.org/customer-service) — water and sewer emergencies for Long Beach addresses.
 - [Long Beach map catalog](https://longbeach.gov/ti/resources/map-catalog/) — do not treat 90805 as a single neighborhood boundary.
-:::
-
-:::figure
-base: trade-wrench-pipe-adjustment
-alt: Adjusting water pipes with adjustable wrench.
-caption: Water line adjustments.
-kind: illustrative
 :::

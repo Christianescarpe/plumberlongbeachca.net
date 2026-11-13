@@ -32,6 +32,13 @@ Write these down before you call. None of them is a form field here.
 
 Do not send photos to this website. There is no upload. If a provider later wants a picture, they will say how. Do not email a lead. No address is published for that purpose.
 
+:::figure
+base: trade-sink-pipes-home
+alt: Residential under-sink plumbing pipes.
+caption: Under-sink pipe layout.
+kind: illustrative
+:::
+
 :::safety
 :::
 
@@ -63,11 +70,4 @@ A: Not from this website. There is no messaging program and no form to confirm. 
 - [Long Beach Utilities — contact](https://www.lbutilities.org/contact-us) — gas-leak instructions and emergency numbers.
 - [Long Beach Utilities — customer service](https://www.lbutilities.org/customer-service) — water and sewer emergencies, including the utility’s all-hours statement.
 - [Privacy](/privacy/) — what this static preview does not collect.
-:::
-
-:::figure
-base: trade-sink-pipes-home
-alt: Residential under-sink plumbing pipes.
-caption: Under-sink pipe layout.
-kind: illustrative
 :::

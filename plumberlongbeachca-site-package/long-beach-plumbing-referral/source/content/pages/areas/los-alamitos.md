@@ -28,6 +28,13 @@ For low pressure, say whether one faucet is weak or every cold fixture is weak. 
 
 Rentals and HOAs need the authorizing person named. The provider needs to know who can shut the water off. Acceptance of Los Alamitos addresses, and of Rossmoor addresses, is unverified and may not even be the same answer. This preview will not dial.
 
+:::figure
+base: trade-sink-plumbing-cabinet
+alt: Repairing plumbing under bathroom cabinet.
+caption: Cabinet fixture maintenance.
+kind: illustrative
+:::
+
 :::faq
 Q: Do you cover Los Alamitos and Rossmoor as one area?
 A: No. Los Alamitos is a city. Rossmoor is a separate census-designated community next to it, and this launch does not give Rossmoor its own page. Say which one the driveway is in. Coverage is not confirmed for either. A straight-line distance from Long Beach only explains why the city was written up. It does not enroll the address. When a referral line exists, the provider still has to accept the work.
@@ -49,12 +56,5 @@ A: Whether the weakness is one fixture or the whole building, and whether the ne
 base: trade-chrome-drain-pipes
 alt: Chrome sink drain plumbing installation.
 caption: Sink drainage assembly.
-kind: illustrative
-:::
-
-:::figure
-base: trade-sink-plumbing-cabinet
-alt: Repairing plumbing under bathroom cabinet.
-caption: Cabinet fixture maintenance.
 kind: illustrative
 :::

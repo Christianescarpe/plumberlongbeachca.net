@@ -41,6 +41,13 @@ Spanish Colonial houses often hide piping in plaster walls that owners do not wa
 
 Bixby Knolls storefronts and upstairs apartments are [commercial or mixed-use](/services/commercial-plumbing/#commercial-plumbing) intakes. The person who can approve a restroom repair may be a tenant, a landlord, or both. Bring that to the call. This guide does not rate restaurants or promise grease-trap service.
 
+:::figure
+base: trade-tiled-bathroom-sink
+alt: Plumber repairing sink in tiled bathroom.
+caption: Bathroom fixture repair in vintage home.
+kind: illustrative
+:::
+
 :::faq
 Q: Does the age of a California Heights house establish the pipe?
 A: No. The City’s district record establishes style, era, and a streetscape, including houses from the 1920s boom and nearly 1,500 homes inside Wardlow, Bixby, Lime, and Gardenia. It does not record galvanized, copper, plastic, or clay at any address. Additions and repipes since then are invisible from the sidewalk. Ask for the material you can see, or a camera where the symptom is in the sewer.
@@ -64,11 +71,4 @@ Heading: Service guides for this part of 90807
 - [California Heights historic district](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — size, styles, streetscape, and the Wardlow, Bixby, Lime, and Gardenia boundaries.
 - [Long Beach Utilities — drinking water](https://www.lbutilities.org/water/water-quality/your-drinking-water) — responsibility to the meter.
 - [Long Beach Utilities — sewer](https://www.lbutilities.org/sewer) — lateral sections, used here only for Long Beach addresses.
-:::
-
-:::figure
-base: trade-tiled-bathroom-sink
-alt: Plumber repairing sink in tiled bathroom.
-caption: Bathroom fixture repair in vintage home.
-kind: illustrative
 :::

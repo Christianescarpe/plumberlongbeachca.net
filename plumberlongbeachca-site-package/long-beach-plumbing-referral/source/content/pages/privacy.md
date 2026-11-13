@@ -45,6 +45,13 @@ Children are not the audience. Do not use the site to send a child’s informati
 Production notice for {{domain}}: calls to {{phone}} are handled under the hours {{hours}}. The legal operator is {{operator}}. If this sentence appears, the privacy review flag was set in the build. Re-read the vendor list before you trust it. This template does not name a tracker that was not configured.
 :::
 
+:::figure
+base: trade-bathroom-sink-repair
+alt: Plumber repairing bathroom sink with tool.
+caption: Bathroom sink repair.
+kind: illustrative
+:::
+
 :::faq
 Q: Does the site store what I type?
 A: There is nowhere to type it in. The pages have no form and no analytics tag. A hosting company might log an IP address if the files are put on a server. Do not send project details to an email address this site does not publish.
@@ -59,11 +66,4 @@ A: There is no lead file from this website to delete. If a live line later creat
 :::sources
 - [California Contractor State License Board marketplace note](https://www.cslb.ca.gov/resources/industrybulletins/online_marketplace_fast_facts.pdf) — background for why the operation is described as a referral, not as the contractor collecting the job payment.
 - [Contact](/contact/) — the phone page. There is no form anywhere on the site.
-:::
-
-:::figure
-base: trade-bathroom-sink-repair
-alt: Plumber repairing bathroom sink with tool.
-caption: Bathroom sink repair.
-kind: illustrative
 :::

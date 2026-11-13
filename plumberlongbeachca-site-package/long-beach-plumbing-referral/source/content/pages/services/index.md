@@ -40,6 +40,13 @@ Each service page names the decisions that change a quote: access, who owns the 
 
 If you already know the neighborhood, the [area guides](/areas/) add housing and access context and link back to the service sections that matter there. Read [how referrals work](/how-referrals-work/) before you treat any sentence on these pages as an offer to perform construction.
 
+:::figure
+base: trade-fixing-pipes-indoor
+alt: Fixing indoor water piping with wrench.
+caption: Indoor plumbing repairs.
+kind: illustrative
+:::
+
 :::related
 Heading: Also on this site
 - [Plumbing questions and guides](/plumbing-guides/) — comparisons that cut across more than one service
@@ -50,11 +57,4 @@ Heading: Also on this site
 :::sources
 - [Long Beach permit center](https://longbeach.gov/lbcd/building/permit-center/) — where plumbing permit questions for Long Beach work are directed.
 - [Contractors State License Board — online marketplace fast facts](https://www.cslb.ca.gov/resources/industrybulletins/online_marketplace_fast_facts.pdf) — referral services are not a license to undertake construction.
-:::
-
-:::figure
-base: trade-fixing-pipes-indoor
-alt: Fixing indoor water piping with wrench.
-caption: Indoor plumbing repairs.
-kind: illustrative
 :::

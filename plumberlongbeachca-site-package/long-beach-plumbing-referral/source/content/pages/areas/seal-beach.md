@@ -30,6 +30,13 @@ Drain and sewer symptoms use the same first sort as anywhere: one fixture, or se
 
 Coverage of Seal Beach ZIPs, condos, and rentals is unverified. This preview does not place a referral call. No local price is listed.
 
+:::figure
+base: trade-shower-plumbing-repair
+alt: Plumber repairing shower plumbing in bathroom.
+caption: Shower and tub plumbing repair.
+kind: illustrative
+:::
+
 :::faq
 Q: Who is allowed to call, and what access should we mention?
 A: The owner or a person the owner or association has authorized. Say if you are a tenant. Mention gates, elevators, parking, and any closet the association locks. Those details change whether a provider can do the work. They do not, by themselves, mean the address is accepted. This preview has no phone to check acceptance. If the building is not in an association, do not invent one. Say it is a house and describe the meter and the heater location instead.
@@ -51,12 +58,5 @@ A: A single faucet or a single clog is usually private and inside the building. 
 base: trade-modern-bathroom-sink
 alt: Modern bathroom sink plumbing.
 caption: Modern fixture installation.
-kind: illustrative
-:::
-
-:::figure
-base: trade-shower-plumbing-repair
-alt: Plumber repairing shower plumbing in bathroom.
-caption: Shower and tub plumbing repair.
 kind: illustrative
 :::

@@ -41,6 +41,13 @@ A single-fixture clog stays on the [drain page](/services/drain-cleaning/#drain-
 
 Nothing in Willmore’s age proves galvanized pipe, a slab leak, or a failed lateral. Remodels since 1905 have replaced a lot of piping the district survey never recorded. Ask for a look at the fixture or a camera where the symptom is a repeat backup. Do not buy a repipe because the house is in a historic district.
 
+:::figure
+base: trade-kitchen-cabinet-sink
+alt: Repairing sink under kitchen cabinet.
+caption: Condo and apartment kitchen plumbing.
+kind: illustrative
+:::
+
 :::faq
 Q: Is the building’s drain line private or shared?
 A: Inside one unit, a trap and a branch are usually that unit’s plumbing. A stack or a lateral may serve other units, and the person who can open a cleanout may be the association or the owner, not the resident. Long Beach Utilities still distinguishes the building-to-property-line lateral from the shared section and the city main. Which of those you are looking at is a site question. The downtown ZIP does not answer it.
@@ -64,11 +71,4 @@ Heading: Guides that match these buildings
 - [Drake Park / Willmore historic district](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — 1881 plan, early-1900s housing, and the designated streets.
 - [Long Beach Utilities — sewer](https://www.lbutilities.org/sewer) — lateral sections for Long Beach addresses, not a condo-rule book.
 - [Long Beach map catalog](https://longbeach.gov/ti/resources/map-catalog/) — neighborhood names and ZIP codes are different layers.
-:::
-
-:::figure
-base: trade-kitchen-cabinet-sink
-alt: Repairing sink under kitchen cabinet.
-caption: Condo and apartment kitchen plumbing.
-kind: illustrative
 :::

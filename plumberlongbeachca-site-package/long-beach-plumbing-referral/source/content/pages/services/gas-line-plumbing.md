@@ -20,6 +20,13 @@ If you smell gas, leave and call Long Beach Utilities or 911. That is not a sale
 id: gas-boundary
 :::
 
+:::figure
+base: trade-construction-pipe-work
+alt: Working on heavy utility piping.
+caption: Utility piping installation.
+kind: illustrative
+:::
+
 :::safety
 :::
 
@@ -83,12 +90,5 @@ A: Route length, whether the line is exposed, meter or regulator changes, wall o
 base: trade-repair-wrench-home
 alt: Plumbing repair with wrench in residential setting.
 caption: Residential pipe maintenance.
-kind: illustrative
-:::
-
-:::figure
-base: trade-construction-pipe-work
-alt: Working on heavy utility piping.
-caption: Utility piping installation.
 kind: illustrative
 :::

@@ -41,6 +41,13 @@ Fixture upgrades in a Craftsman kitchen are the [fixture guide](/services/fixtur
 
 HOA and condo buildings on the peninsula should have the access rules in the first sentence of the call: elevator, parking, and who meets the provider. This site does not keep those rules.
 
+:::figure
+base: trade-modern-bathroom-sink
+alt: Modern bathroom sink plumbing.
+caption: Residential bathroom plumbing.
+kind: illustrative
+:::
+
 :::faq
 Q: We want to upgrade fixtures in an older Heights house. Where do we start?
 A: Separate an interior fixture swap from anything that changes the outside of a designated house. Interior supply and drain work is the fixture guide, plus a permit question at the Long Beach counter if the scope is more than a repair. Street-facing vents, equipment, or alterations are a preservation question at (562) 570-6194 before a date is promised. The 1905-to-1923 building boom does not tell you the pipe is original.
@@ -64,11 +71,4 @@ Heading: Service pages that fit these streets
 - [Belmont Heights, Bluff Park, and Bluff Heights district pages](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — dates, styles, and the streets named above.
 - [Long Beach Utilities — sewer](https://www.lbutilities.org/sewer) — lateral responsibility for Long Beach addresses.
 - [Historic preservation phone](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — (562) 570-6194, published by the City for district questions.
-:::
-
-:::figure
-base: trade-modern-bathroom-sink
-alt: Modern bathroom sink plumbing.
-caption: Residential bathroom plumbing.
-kind: illustrative
 :::

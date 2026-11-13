@@ -41,6 +41,13 @@ Lakewood uses more than one postal code, and this page deliberately does not lis
 
 Commercial calls follow the [commercial guide](/services/commercial-plumbing/#commercial-plumbing): authority, fixture type, and hours. Grease equipment is not assumed. No Lakewood price appears here.
 
+:::figure
+base: trade-repair-wrench-home
+alt: Home plumbing repair with wrench.
+caption: Home water pipe servicing.
+kind: illustrative
+:::
+
 :::faq
 Q: Which Lakewood ZIPs are accepted?
 A: None are confirmed. This preview has no live coverage feed and no referral phone. Lakewood is about 5.3 straight-line miles from the Census point used for planning, which only explains why a guide exists. The address, not a ZIP list this page refuses to invent, is what a provider would check. Condos and rentals need the owner or manager identified. A yes is not available from the website.
@@ -56,11 +63,4 @@ A: One slow fixture, with the others clear, is usually a branch or a trap and st
 - [City of Lakewood](https://www.lakewoodcity.org/) — municipal site. Page text was not copied; automated access was refused during this build.
 - [2025 Census Gazetteer](https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_gaz_place_06.txt) — source of the 5.3-mile straight-line figure.
 - [Sewer repair guide](/services/sewer-repair/#sewer-lines) — method only. The responsibility section is labeled as Long Beach.
-:::
-
-:::figure
-base: trade-repair-wrench-home
-alt: Home plumbing repair with wrench.
-caption: Home water pipe servicing.
-kind: illustrative
 :::

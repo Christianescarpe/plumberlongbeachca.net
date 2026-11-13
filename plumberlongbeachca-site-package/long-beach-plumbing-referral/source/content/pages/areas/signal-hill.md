@@ -41,6 +41,13 @@ Acceptance of 90755, of multi-unit buildings, and of any specialty is unverified
 
 If the quote involves excavation, ask who marks utilities and which city issues the encroachment permit. 811 is a damage-prevention call, not a local ordinance this page is inventing. If the quote involves a water heater, use the [heater guide](/services/water-heaters/#water-heater-install-or-replace) for the appliance questions and then confirm fuel utility and permits in Signal Hill. Gas odor is an evacuation and 911 unless you have confirmed the correct gas utility from a safe place.
 
+:::figure
+base: trade-wrench-pipe-adjustment
+alt: Adjusting water pipes with adjustable wrench.
+caption: Supply pipe maintenance.
+kind: illustrative
+:::
+
 :::faq
 Q: Is my address covered because it is next to Long Beach?
 A: Not on this page. Signal Hill is a separate city about 1.6 miles from the Census point used for planning, and 90755 is the ZIP label to confirm rather than a coverage feed. A provider has to accept the address, the building type, and the work. This preview cannot check that, because no referral number is active. Being surrounded by Long Beach does not put the house on Long Beach’s permit counter.
@@ -56,11 +63,4 @@ A: The city and street address, who is authorized, the symptom, and whether the 
 - [City of Signal Hill](https://cityofsignalhill.org/) — the municipal site. This guide does not quote its code.
 - [2025 Census Gazetteer](https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_gaz_place_06.txt) — internal points behind the 1.6-mile figure.
 - [Long Beach historic districts](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — mentions houses moved from Signal Hill into California Heights. That is not a Signal Hill plumbing record.
-:::
-
-:::figure
-base: trade-wrench-pipe-adjustment
-alt: Adjusting water pipes with adjustable wrench.
-caption: Supply pipe maintenance.
-kind: illustrative
 :::

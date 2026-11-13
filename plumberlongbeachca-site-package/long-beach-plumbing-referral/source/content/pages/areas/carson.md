@@ -41,6 +41,13 @@ Water in the street, a broken public main, or a hydrant failure belongs to the u
 
 Quotes should name who is authorized, whether the address is a house or a business, and what is excluded. Timing and price are the provider’s. This page will not estimate either.
 
+:::figure
+base: trade-modern-bathroom-undersink
+alt: Working under sink in modern bathroom.
+caption: Fixture plumbing repair.
+kind: illustrative
+:::
+
 :::faq
 Q: Will you take a commercial call in Carson?
 A: Only if a provider accepts that property type, and acceptance is not confirmed. The caller has to be allowed to approve the work. Describe the fixture and the hours. Do not describe a plant, a grease program, or a process line as ordinary commercial plumbing. Those are likely outside the scope. A house and a business on the same street are different intakes. This preview cannot check a live schedule.
@@ -56,11 +63,4 @@ A: The provider who accepts the work, on a written scope, after the address and 
 - [City of Carson](https://www.carsonca.gov/) — municipal site. Local utility ordinances were not copied.
 - [2025 Census Gazetteer](https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_gaz_place_06.txt) — straight-line distance of about 6.2 miles.
 - [Commercial plumbing](/services/commercial-plumbing/#commercial-plumbing) — authority and exclusions, including the industrial limit.
-:::
-
-:::figure
-base: trade-modern-bathroom-undersink
-alt: Working under sink in modern bathroom.
-caption: Fixture plumbing repair.
-kind: illustrative
 :::

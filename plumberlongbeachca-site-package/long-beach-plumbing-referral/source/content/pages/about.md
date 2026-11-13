@@ -43,6 +43,13 @@ No star rating, no testimonial, and no “jobs we did in Belmont Shore.” There
 
 Specialty topics, nearby cities, and some methods such as jetting or trenchless work stay conditional. A paragraph that explains them is not a statement that they are staffed tonight. The [specialty guide](/services/specialty-plumbing/#backflow-preventers) is the longest version of that limit.
 
+:::figure
+base: trade-fixtures-beneath-sink
+alt: Plumbing fixtures beneath ceramic sink and tile wall.
+caption: Sink plumbing fixtures.
+kind: illustrative
+:::
+
 :::faq
 Q: Are you a Long Beach plumbing company?
 A: No. The site explains plumbing decisions and, when a real line exists, may connect a caller to an independent provider. It does not hold itself out as the contractor. License, insurance, price, and schedule belong to the provider who accepts the work. The operator’s legal name is withheld until it is approved for publication, rather than replaced with a fictional owner.
@@ -58,11 +65,4 @@ A: You would pay the contractor you hire, under their quote. You are not asked t
 - [How referrals work](/how-referrals-work/) — contracting limits and compensation language.
 - [CSLB online marketplace fast facts](https://www.cslb.ca.gov/resources/industrybulletins/online_marketplace_fast_facts.pdf) — referral services and the ban on undertaking construction.
 - Photograph captions on the pages where they appear — creator, license, and date sit under each image. Original diagrams are labeled as drawings made for this site.
-:::
-
-:::figure
-base: trade-fixtures-beneath-sink
-alt: Plumbing fixtures beneath ceramic sink and tile wall.
-caption: Sink plumbing fixtures.
-kind: illustrative
 :::

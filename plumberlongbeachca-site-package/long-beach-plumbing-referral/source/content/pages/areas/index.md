@@ -49,6 +49,13 @@ Closer places that do not have pages yet include Rossmoor, Hawaiian Gardens, Art
 
 Service guides, not more city clones, are where the work is explained: [drains](/services/drain-cleaning/), [sewers](/services/sewer-repair/), [leaks](/services/leak-detection/), [pipes](/services/pipe-water-line-repair/), [heaters](/services/water-heaters/), [fixtures](/services/fixtures-remodel-plumbing/), [gas](/services/gas-line-plumbing/), [commercial](/services/commercial-plumbing/), and [specialty](/services/specialty-plumbing/).
 
+:::figure
+base: trade-tiled-bathroom-sink
+alt: Plumber repairing sink fixtures in a tiled bathroom.
+caption: Bathroom fixture maintenance.
+kind: illustrative
+:::
+
 :::faq
 Q: Is a ZIP code enough to know I am covered?
 A: No. The eleven Long Beach sections and the five nearby cities are how this site is organized. Acceptance of houses, condos, rentals, and businesses is not verified, and a ZIP crosses neighborhood and sometimes city lines. When a phone line exists, the address is what has to be checked. Until then, the pages are reading material, not a yes.
@@ -70,12 +77,5 @@ A: No. Each has its own guide because the municipal rules differ. Signal Hill is
 base: trade-kitchen-cabinet-sink
 alt: Plumber repairing under-cabinet kitchen sink lines.
 caption: Kitchen plumbing service.
-kind: illustrative
-:::
-
-:::figure
-base: trade-tiled-bathroom-sink
-alt: Plumber repairing sink fixtures in a tiled bathroom.
-caption: Bathroom fixture maintenance.
 kind: illustrative
 :::

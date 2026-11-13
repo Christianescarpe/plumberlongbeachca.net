@@ -41,6 +41,13 @@ It will not say west-central houses are on clay, galvanized pipe, or slab leaks.
 
 Fixture replacements in a small cottage still have a door-width problem. A tub or a heater that does not fit the hall is the [fixture](/services/fixtures-remodel-plumbing/#bathtub-install-or-replace) or [heater](/services/water-heaters/#water-heater-install-or-replace) conversation. Measure, and do not assume a historic label blocks an interior repair. Exterior changes on the designated Eucalyptus and 20th/21st addresses are a preservation call at [(562) 570-6194](tel:+15625706194).
 
+:::figure
+base: trade-bathroom-drain-repair
+alt: Repairing sink drain in home bathroom.
+caption: Bathroom drain cleaning and repair.
+kind: illustrative
+:::
+
 :::faq
 Q: Which kind of property should I say I have?
 A: Use the door the plumber would enter: a single cottage, a rear unit, a multi-unit building, a storefront, or a workspace. Then say whether you own it, rent it, or manage it. 90806 and 90810 contain all of those. The two-block Wrigley historic district is only the Eucalyptus, 20th, and 21st addresses the City lists. Naming the property type routes the call to residential or commercial rules. Naming the ZIP does not.
@@ -64,11 +71,4 @@ Heading: Routes from these ZIP sections
 - [Wrigley Area historic district](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — 1928–1934 cottages and the three street ranges the City designates.
 - [Long Beach Utilities — sewer](https://www.lbutilities.org/sewer) — lateral sections for Long Beach addresses in 90806 and 90810.
 - [Long Beach permit center](https://longbeach.gov/lbcd/building/permit-center/) — ordinary permit questions outside and inside the cottage district.
-:::
-
-:::figure
-base: trade-bathroom-drain-repair
-alt: Repairing sink drain in home bathroom.
-caption: Bathroom drain cleaning and repair.
-kind: illustrative
 :::

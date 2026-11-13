@@ -43,6 +43,13 @@ If the house is on a Rose Park or Rose Park South frontage the City lists, an ex
 
 Condos and rentals in 90808 and 90815 add the usual authority question. The caller should know who can approve a shutoff. This referral preview cannot.
 
+:::figure
+base: trade-kitchen-sink-fixing
+alt: Plumber fixing kitchen sink plumbing.
+caption: Residential kitchen plumbing.
+kind: illustrative
+:::
+
 :::faq
 Q: The shower is weak and the hose bib is fine. Is the whole line bad?
 A: Probably not. One weak fixture with normal flow elsewhere points at that valve, aerator, shutoff, or branch. A provider should test before talking about a repipe or a utility main. If every cold opening in the house is weak, widen the question to the regulator, the private line, and the meter. Rose Park’s age does not decide it, and neither does an El Dorado tract.
@@ -66,11 +73,4 @@ Heading: Pages that keep the east side specific
 - [Rose Park and Rose Park South](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — Craftsman-era dates and the streets the City designates.
 - [Long Beach Utilities — drinking water](https://www.lbutilities.org/water/water-quality/your-drinking-water) — hardness and unheated water, citywide rather than east-side only.
 - [Long Beach Utilities — sewer](https://www.lbutilities.org/sewer) — lateral responsibility for Long Beach, including these ZIP sections when the address is in the city.
-:::
-
-:::figure
-base: trade-kitchen-sink-fixing
-alt: Plumber fixing kitchen sink plumbing.
-caption: Residential kitchen plumbing.
-kind: illustrative
 :::

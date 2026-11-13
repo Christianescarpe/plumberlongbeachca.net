@@ -356,25 +356,56 @@ function renderPhoto(data, photos, config, eager) {
 
 function renderFlow(blocks, config, photos, faqHeading) {
   let html = "";
-  let paraBuf = [];
-  const flush = () => {
-    if (!paraBuf.length) return;
-    html += paraBuf.map((text) => `<p>${inline(text, config)}</p>\n`).join("");
-    paraBuf = [];
-  };
-  for (const block of blocks) {
-    if (block.type === "p") {
-      paraBuf.push(block.text);
+  let i = 0;
+  while (i < blocks.length) {
+    const b = blocks[i];
+    // Pattern 1: Heading followed by 1 or more paragraphs and then a figure fence
+    if (b.type === "h") {
+      let j = i + 1;
+      const paras = [];
+      while (j < blocks.length && blocks[j].type === "p") {
+        paras.push(blocks[j]);
+        j++;
+      }
+      if (j < blocks.length && blocks[j].type === "fence" && blocks[j].fence === "figure" && paras.length > 0) {
+        const id = b.id ? ` id="${b.id}"` : "";
+        const headingHtml = `<h${b.level}${id}>${inline(b.text, config)}</h${b.level}>\n`;
+        const parasHtml = paras.map((p) => `<p>${inline(p.text, config)}</p>\n`).join("");
+        const photoHtml = renderFence(blocks[j], config, photos, faqHeading);
+        html += `<section class="split-section">\n  <div class="split-section-copy">\n    ${headingHtml}    ${parasHtml}  </div>\n  ${photoHtml}\n</section>\n`;
+        i = j + 1;
+        continue;
+      }
+    }
+    // Pattern 2: 1 or more paragraphs followed immediately by a figure fence
+    if (b.type === "p") {
+      let j = i;
+      const paras = [];
+      while (j < blocks.length && blocks[j].type === "p") {
+        paras.push(blocks[j]);
+        j++;
+      }
+      if (j < blocks.length && blocks[j].type === "fence" && blocks[j].fence === "figure" && paras.length > 0) {
+        const parasHtml = paras.map((p) => `<p>${inline(p.text, config)}</p>\n`).join("");
+        const photoHtml = renderFence(blocks[j], config, photos, faqHeading);
+        html += `<section class="split-section">\n  <div class="split-section-copy">\n    ${parasHtml}  </div>\n  ${photoHtml}\n</section>\n`;
+        i = j + 1;
+        continue;
+      }
+      html += `<p>${inline(b.text, config)}</p>\n`;
+      i++;
       continue;
     }
-    flush();
-    if (block.type === "h") {
-      const id = block.id ? ` id="${block.id}"` : "";
-      html += `<h${block.level}${id}>${inline(block.text, config)}</h${block.level}>\n`;
-    } else if (block.type === "list") html += `${listHtml(block.items, config)}\n`;
-    else if (block.type === "fence") html += `${renderFence(block, config, photos, faqHeading)}\n`;
+    if (b.type === "h") {
+      const id = b.id ? ` id="${b.id}"` : "";
+      html += `<h${b.level}${id}>${inline(b.text, config)}</h${b.level}>\n`;
+    } else if (b.type === "list") {
+      html += `${listHtml(b.items, config)}\n`;
+    } else if (b.type === "fence") {
+      html += `${renderFence(b, config, photos, faqHeading)}\n`;
+    }
+    i++;
   }
-  flush();
   return html;
 }
 
