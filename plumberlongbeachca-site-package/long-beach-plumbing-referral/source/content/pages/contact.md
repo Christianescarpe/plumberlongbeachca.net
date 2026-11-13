@@ -42,18 +42,18 @@ kind: illustrative
 :::safety
 :::
 
+## Hours and emergencies {#hours-and-emergencies}
+
+Long Beach Utilities says its water and sewer emergency line answers at all hours. That line is the utility, at [(562) 570-2390](tel:+15625702390). The gas emergency line is [(562) 570-2140](tel:+15625702140). Both were rechecked on the utility’s site on November 8, 2026. Reconfirm them if you are reading this later.
+
+If you are outside Long Beach, those utility numbers may be the wrong agency. [Signal Hill](/areas/signal-hill/), [Lakewood](/areas/lakewood/), [Seal Beach](/areas/seal-beach/), [Los Alamitos](/areas/los-alamitos/), and [Carson](/areas/carson/) each say so on their own guides. Use 911 when you are unsure and someone could be hurt.
+
 :::figure
 base: service-index-overview
 alt: Professional plumbing tools, wrenches, and brass fittings arranged on a work surface.
 caption: Plumbing equipment.
 kind: illustrative
 :::
-
-## Hours and emergencies {#hours-and-emergencies}
-
-Long Beach Utilities says its water and sewer emergency line answers at all hours. That line is the utility, at [(562) 570-2390](tel:+15625702390). The gas emergency line is [(562) 570-2140](tel:+15625702140). Both were rechecked on the utility’s site on November 8, 2026. Reconfirm them if you are reading this later.
-
-If you are outside Long Beach, those utility numbers may be the wrong agency. [Signal Hill](/areas/signal-hill/), [Lakewood](/areas/lakewood/), [Seal Beach](/areas/seal-beach/), [Los Alamitos](/areas/los-alamitos/), and [Carson](/areas/carson/) each say so on their own guides. Use 911 when you are unsure and someone could be hurt.
 
 :::faq
 Q: Can I request a quote without calling?

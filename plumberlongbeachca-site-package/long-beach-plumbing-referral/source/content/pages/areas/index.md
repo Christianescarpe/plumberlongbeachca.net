@@ -35,6 +35,13 @@ Guide | ZIP sections | What the guide is careful about
 
 The eleven residential sections named above are 90802, 90803, 90804, 90805, 90806, 90807, 90808, 90810, 90813, 90814, and 90815. There are no residential landing pages for PO Box codes such as 90801, 90809, 90832, or 90853. Campus, postal, and institutional codes, including 90822 and the 90831 family and similar unique codes, are not treated as homeowner neighborhoods. Public directories disagree on some labels. Confirm with the address rather than with a blog.
 
+:::figure
+base: trade-kitchen-cabinet-sink
+alt: Plumber repairing under-cabinet kitchen sink lines.
+caption: Kitchen plumbing service.
+kind: illustrative
+:::
+
 :::table
 Nearby cities with their own guides. Fulfillment is unverified.
 City | Straight-line miles from the Long Beach internal point | Why it is not a Long Beach page
@@ -71,11 +78,4 @@ A: No. Each has its own guide because the municipal rules differ. Signal Hill is
 - [U.S. Census Bureau, 2025 Gazetteer place file for California](https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_gaz_place_06.txt) — internal points used for the straight-line distances.
 - [City of Long Beach historic districts](https://www.longbeach.gov/lbcd/planning/preservation/districts/) — the housing facts inside the six Long Beach guides.
 - [Long Beach map catalog](https://longbeach.gov/ti/resources/map-catalog/) — the City’s own reminder that neighborhoods and ZIP codes are not the same overlay.
-:::
-
-:::figure
-base: trade-kitchen-cabinet-sink
-alt: Plumber repairing under-cabinet kitchen sink lines.
-caption: Kitchen plumbing service.
-kind: illustrative
 :::

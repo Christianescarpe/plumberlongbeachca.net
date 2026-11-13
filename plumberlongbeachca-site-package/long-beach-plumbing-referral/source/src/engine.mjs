@@ -354,41 +354,57 @@ function renderPhoto(data, photos, config, eager) {
   return `<figure class="photo">\n<img src="${src800}" srcset="${src800} ${meta.width_800}w, ${src1600} ${meta.width_1600}w" sizes="(min-width: 960px) 640px, 100vw" width="${meta.width_1600}" height="${meta.height_1600}" alt="${escapeHtml(data.alt)}" ${eager ? `loading="eager" fetchpriority="high"` : `loading="lazy"`} decoding="async">\n</figure>`;
 }
 
+function isSplitInlineBlock(block) {
+  return (
+    block.type === "p" ||
+    block.type === "list" ||
+    (block.type === "fence" && block.fence === "conditional")
+  );
+}
+
+function renderSplitInlineBlock(block, config, photos, faqHeading) {
+  if (block.type === "p") return `<p>${inline(block.text, config)}</p>\n`;
+  if (block.type === "list") return `${listHtml(block.items, config)}\n`;
+  return `${renderFence(block, config, photos, faqHeading)}\n`;
+}
+
 function renderFlow(blocks, config, photos, faqHeading) {
   let html = "";
   let i = 0;
   while (i < blocks.length) {
     const b = blocks[i];
-    // Pattern 1: Heading followed by 1 or more paragraphs and then a figure fence
+    // Pattern 1: Heading followed by prose/list/conditional blocks and then a figure fence
     if (b.type === "h") {
       let j = i + 1;
-      const paras = [];
-      while (j < blocks.length && blocks[j].type === "p") {
-        paras.push(blocks[j]);
+      const items = [];
+      let hasPara = false;
+      while (j < blocks.length && isSplitInlineBlock(blocks[j])) {
+        if (blocks[j].type === "p") hasPara = true;
+        items.push(blocks[j]);
         j++;
       }
-      if (j < blocks.length && blocks[j].type === "fence" && blocks[j].fence === "figure" && paras.length > 0) {
+      if (j < blocks.length && blocks[j].type === "fence" && blocks[j].fence === "figure" && hasPara) {
         const id = b.id ? ` id="${b.id}"` : "";
         const headingHtml = `<h${b.level}${id}>${inline(b.text, config)}</h${b.level}>\n`;
-        const parasHtml = paras.map((p) => `<p>${inline(p.text, config)}</p>\n`).join("");
+        const bodyHtml = items.map((item) => renderSplitInlineBlock(item, config, photos, faqHeading)).join("");
         const photoHtml = renderFence(blocks[j], config, photos, faqHeading);
-        html += `<section class="split-section">\n  <div class="split-section-copy">\n    ${headingHtml}    ${parasHtml}  </div>\n  ${photoHtml}\n</section>\n`;
+        html += `<section class="split-section">\n  <div class="split-section-copy">\n    ${headingHtml}    ${bodyHtml}  </div>\n  ${photoHtml}\n</section>\n`;
         i = j + 1;
         continue;
       }
     }
-    // Pattern 2: 1 or more paragraphs followed immediately by a figure fence
+    // Pattern 2: Prose/list/conditional blocks starting with a paragraph followed immediately by a figure fence
     if (b.type === "p") {
       let j = i;
-      const paras = [];
-      while (j < blocks.length && blocks[j].type === "p") {
-        paras.push(blocks[j]);
+      const items = [];
+      while (j < blocks.length && isSplitInlineBlock(blocks[j])) {
+        items.push(blocks[j]);
         j++;
       }
-      if (j < blocks.length && blocks[j].type === "fence" && blocks[j].fence === "figure" && paras.length > 0) {
-        const parasHtml = paras.map((p) => `<p>${inline(p.text, config)}</p>\n`).join("");
+      if (j < blocks.length && blocks[j].type === "fence" && blocks[j].fence === "figure" && items.length > 0) {
+        const bodyHtml = items.map((item) => renderSplitInlineBlock(item, config, photos, faqHeading)).join("");
         const photoHtml = renderFence(blocks[j], config, photos, faqHeading);
-        html += `<section class="split-section">\n  <div class="split-section-copy">\n    ${parasHtml}  </div>\n  ${photoHtml}\n</section>\n`;
+        html += `<section class="split-section">\n  <div class="split-section-copy">\n    ${bodyHtml}  </div>\n  ${photoHtml}\n</section>\n`;
         i = j + 1;
         continue;
       }

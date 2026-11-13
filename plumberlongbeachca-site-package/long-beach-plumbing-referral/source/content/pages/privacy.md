@@ -41,15 +41,15 @@ This preview does not sell mailing lists, because it does not collect them. It d
 
 Children are not the audience. Do not use the site to send a child’s information. There is nowhere to send it.
 
-:::if-production
-Production notice for {{domain}}: calls to {{phone}} are handled under the hours {{hours}}. The legal operator is {{operator}}. If this sentence appears, the privacy review flag was set in the build. Re-read the vendor list before you trust it. This template does not name a tracker that was not configured.
-:::
-
 :::figure
 base: trade-bathroom-sink-repair
 alt: Plumber repairing bathroom sink with tool.
 caption: Bathroom sink repair.
 kind: illustrative
+:::
+
+:::if-production
+Production notice for {{domain}}: calls to {{phone}} are handled under the hours {{hours}}. The legal operator is {{operator}}. If this sentence appears, the privacy review flag was set in the build. Re-read the vendor list before you trust it. This template does not name a tracker that was not configured.
 :::
 
 :::faq

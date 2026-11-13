@@ -20,6 +20,13 @@ The city site is [cityoflosalamitos.org](https://cityoflosalamitos.org/). Permit
 
 This guide also does not invent a housing era for Los Alamitos. Remodels, fixture upgrades, and pressure complaints happen here for the same physical reasons they happen elsewhere. They do not need a fake local statistic to be worth a clear call.
 
+:::figure
+base: trade-chrome-drain-pipes
+alt: Chrome sink drain plumbing installation.
+caption: Sink drainage assembly.
+kind: illustrative
+:::
+
 ## What to gather for a remodel or a pressure complaint {#what-to-gather}
 
 For a remodel, list the fixtures that would move, whether a wall opens, and whether you already bought the fixtures. The [remodel section](/services/fixtures-remodel-plumbing/#plumbing-for-remodel-or-addition) separates plumbing from tile and cabinets. Ask the provider which permit they would file in Los Alamitos, and confirm it with the city if the answer is casual. An addition that needs a new sewer connection is a local agency process. It is not the Long Beach Utilities connection timeline reprinted from another page.
@@ -50,11 +57,4 @@ A: Whether the weakness is one fixture or the whole building, and whether the ne
 - [City of Los Alamitos](https://cityoflosalamitos.org/) — municipal site. Code text was not copied.
 - [2025 Census Gazetteer](https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_gaz_place_06.txt) — Los Alamitos at about 6.2 miles and Rossmoor CDP at about 5.1 miles, straight line.
 - [Pipe and pressure guide](/services/pipe-water-line-repair/#water-pressure-problems) — the one-fixture versus whole-building split, without a local water-quality claim.
-:::
-
-:::figure
-base: trade-chrome-drain-pipes
-alt: Chrome sink drain plumbing installation.
-caption: Sink drainage assembly.
-kind: illustrative
 :::

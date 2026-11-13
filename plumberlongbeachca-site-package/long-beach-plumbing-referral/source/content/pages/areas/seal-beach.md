@@ -20,6 +20,13 @@ Long Beach Utilities’ lateral diagram, emergency numbers, and hardness stateme
 
 Not every Seal Beach address is on the sand, in a high-rise, or under an association. Old Town, hill streets, and inland blocks are different buildings. This page will not assign corrosion, flooding, or salt damage to all of them. Where a property is coastal, or where a condo association controls a closet and a roof vent, those are access and placement questions. They are questions because of that property, not because the city name is Seal Beach.
 
+:::figure
+base: trade-modern-bathroom-sink
+alt: Modern bathroom sink plumbing.
+caption: Modern fixture installation.
+kind: illustrative
+:::
+
 ## Access, heaters, and private lines {#access-heaters-lines}
 
 Bring the association rules if you have them: elevator hours, parking, and who approves a water-heater change. The [heater guide](/services/water-heaters/#tankless-water-heater-install) explains tank versus tankless as fuel, vent, space, and maintenance. It does not know whether your lanai can hold equipment. A provider has to see the alcove. Do not accept a sentence that says coastal air always destroys a tank. Ask what is wrong with the unit you have.
@@ -52,11 +59,4 @@ A: A single faucet or a single clog is usually private and inside the building. 
 - [City of Seal Beach](https://www.sealbeachca.gov/) — municipal site. Local code was not restated.
 - [2025 Census Gazetteer](https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_gaz_place_06.txt) — straight-line distance of about 5.9 miles.
 - [Water heater guide](/services/water-heaters/#water-heaters-tankless) — equipment constraints that are not a coastal verdict.
-:::
-
-:::figure
-base: trade-modern-bathroom-sink
-alt: Modern bathroom sink plumbing.
-caption: Modern fixture installation.
-kind: illustrative
 :::

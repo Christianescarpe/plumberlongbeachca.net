@@ -20,19 +20,19 @@ If you smell gas, leave and call Long Beach Utilities or 911. That is not a sale
 id: gas-boundary
 :::
 
-:::figure
-base: trade-construction-pipe-work
-alt: Working on heavy utility piping.
-caption: Utility piping installation.
-kind: illustrative
-:::
-
 :::safety
 :::
 
 Long Beach Utilities publishes the local gas emergency number, [(562) 570-2140](tel:+15625702140). Its contact guidance says to take other people with you, leave the area, and call from a safe place. Do not use switches, flames, or a phone where the odor is. Do not look for the leak with a lighter, a match, or a homemade bubble test. Those are not steps this site will dress up as advice.
 
 If you are unsure whether the odor is gas, treat it as gas until the utility or the fire department says otherwise. Do not stay in the building to arrange a plumbing visit.
+
+:::figure
+base: trade-construction-pipe-work
+alt: Working on heavy utility piping.
+caption: Utility piping installation.
+kind: illustrative
+:::
 
 ## Gas Lines Installed & Repaired {#gas-lines-installed-repaired}
 
@@ -49,6 +49,13 @@ Repair of existing appliance piping, when there is no odor and the utility has n
 Water-heater gas connectors are a frequent reason people ask about piping. The heater decision itself is on the [water heater page](/services/water-heaters/#water-heater-install-or-replace). If the heater will not light and you do not smell gas, the utility’s published gas customer number is [(562) 570-2100](tel:+15625702100). Smell gas, and you are back to the emergency number and 911.
 
 Access is part of the quote. A meter in a side yard, a line in a ceiling, or a condo shaft that a manager must open will not take the same time as an exposed garage run. [Downtown](/areas/downtown-alamitos-beach/) and [Belmont Shore](/areas/belmont-shore-heights/) buildings often add a manager or an association. Say that before anyone schedules. Neighboring cities may not be served by Long Beach’s municipal gas utility. [Signal Hill](/areas/signal-hill/), [Lakewood](/areas/lakewood/), [Seal Beach](/areas/seal-beach/), [Los Alamitos](/areas/los-alamitos/), and [Carson](/areas/carson/) each need their own utility confirmed. Do not hand them this city’s gas number as if it were universal.
+
+:::figure
+base: trade-repair-wrench-home
+alt: Plumbing repair with wrench in residential setting.
+caption: Residential pipe maintenance.
+kind: illustrative
+:::
 
 :::context
 Heading: Long Beach context for gas piping
@@ -84,11 +91,4 @@ A: Route length, whether the line is exposed, meter or regulator changes, wall o
 - [Long Beach Utilities — customer service](https://www.lbutilities.org/customer-service) — gas emergency number and the separate customer number for gas service issues.
 - [Long Beach permit center](https://longbeach.gov/lbcd/building/permit-center/) — building-permit questions for planned work.
 - [CSLB advertising guidelines](https://www.cslb.ca.gov/resources/guidesandpublications/advertisingguidelines.pdf) — contractor ads have license-disclosure rules this referral site is not using a license to meet.
-:::
-
-:::figure
-base: trade-repair-wrench-home
-alt: Plumbing repair with wrench in residential setting.
-caption: Residential pipe maintenance.
-kind: illustrative
 :::
