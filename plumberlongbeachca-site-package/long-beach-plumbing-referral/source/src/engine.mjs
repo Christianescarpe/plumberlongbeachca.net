@@ -511,11 +511,83 @@ function stickyCall(config) {
   return `<div class="sticky-call">${callControl(config, "sticky-btn")}</div>`;
 }
 
-function navHtml(items, current, label) {
-  return `<nav aria-label="${label}">${items.map(([name, href]) => {
-    const currentAttr = href === current ? ` aria-current="page"` : "";
-    return `<a href="${escapeHtml(href)}"${currentAttr}>${escapeHtml(name)}</a>`;
-  }).join("")}</nav>`;
+function dropdownCaret() {
+  return `<svg class="nav-caret" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>`;
+}
+
+function navDropdownLinks(items, currentPath) {
+  return items
+    .map(([name, href]) => {
+      const active = href === currentPath ? ` aria-current="page"` : "";
+      return `<a href="${escapeHtml(href)}"${active}>${escapeHtml(name)}</a>`;
+    })
+    .join("");
+}
+
+function desktopNavHtml(items, currentNav, currentPath) {
+  return `<nav class="desktop-nav" aria-label="Primary">${items
+    .map(([name, href]) => {
+      const currentAttr = href === currentNav ? ` aria-current="page"` : "";
+      if (href === "/services/") {
+        return `<div class="nav-item has-dropdown">
+          <a href="/services/" class="nav-link"${currentAttr} aria-haspopup="true">${escapeHtml(name)}${dropdownCaret()}</a>
+          <div class="nav-dropdown" role="menu" aria-label="Services">
+            <a href="/services/" class="nav-dropdown-all"${currentPath === "/services/" ? ` aria-current="page"` : ""}>All Services &rarr;</a>
+            ${navDropdownLinks(services, currentPath)}
+          </div>
+        </div>`;
+      }
+      if (href === "/areas/") {
+        return `<div class="nav-item has-dropdown">
+          <a href="/areas/" class="nav-link"${currentAttr} aria-haspopup="true">${escapeHtml(name)}${dropdownCaret()}</a>
+          <div class="nav-dropdown nav-dropdown-wide" role="menu" aria-label="Service areas">
+            <a href="/areas/" class="nav-dropdown-all"${currentPath === "/areas/" ? ` aria-current="page"` : ""}>All Service Areas &rarr;</a>
+            <div class="nav-dropdown-cols">
+              <div>
+                <p class="nav-dropdown-heading">Long Beach</p>
+                ${navDropdownLinks(districts, currentPath)}
+              </div>
+              <div>
+                <p class="nav-dropdown-heading">Nearby Cities</p>
+                ${navDropdownLinks(cities, currentPath)}
+              </div>
+            </div>
+          </div>
+        </div>`;
+      }
+      return `<a href="${escapeHtml(href)}"${currentAttr}>${escapeHtml(name)}</a>`;
+    })
+    .join("")}</nav>`;
+}
+
+function mobileNavHtml(items, currentNav, currentPath) {
+  return `<nav aria-label="Primary mobile">${items
+    .map(([name, href]) => {
+      const currentAttr = href === currentNav ? ` aria-current="page"` : "";
+      if (href === "/services/") {
+        return `<details class="mobile-subnav">
+          <summary>Services</summary>
+          <div class="mobile-subnav-links">
+            <a href="/services/"${currentPath === "/services/" ? ` aria-current="page"` : ""}>All Services</a>
+            ${navDropdownLinks(services, currentPath)}
+          </div>
+        </details>`;
+      }
+      if (href === "/areas/") {
+        return `<details class="mobile-subnav">
+          <summary>Areas</summary>
+          <div class="mobile-subnav-links">
+            <a href="/areas/"${currentPath === "/areas/" ? ` aria-current="page"` : ""}>All Service Areas</a>
+            <span class="mobile-subnav-heading">Long Beach</span>
+            ${navDropdownLinks(districts, currentPath)}
+            <span class="mobile-subnav-heading">Nearby Cities</span>
+            ${navDropdownLinks(cities, currentPath)}
+          </div>
+        </details>`;
+      }
+      return `<a href="${escapeHtml(href)}"${currentAttr}>${escapeHtml(name)}</a>`;
+    })
+    .join("")}</nav>`;
 }
 
 function subnav(path) {
@@ -735,11 +807,11 @@ ${renderFlow(rest, config, photos, faqHeading)}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#5097bc"/><path d="M8 23V12.5h9.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/><path d="M17.5 12.5H23V18" fill="none" stroke="#000000" stroke-width="2.4" stroke-linecap="round"/><circle cx="23" cy="18" r="1.5" fill="#ffffff"/></svg>
         <span><span class="brand-name">${escapeHtml(config.brand.publicName)}</span><span class="brand-note">Plumbing referral · Long Beach</span></span>
       </a>
-      ${navHtml(primaryNav, currentNav, "Primary").replace("<nav", `<nav class="desktop-nav"`)}
+      ${desktopNavHtml(primaryNav, currentNav, front.path)}
       <div class="header-call">${headerCall(config)}</div>
       <details class="mobile-nav">
         <summary>Menu</summary>
-        ${navHtml(primaryNav, currentNav, "Primary mobile")}
+        ${mobileNavHtml(primaryNav, currentNav, front.path)}
       </details>
     </div>
   </header>
