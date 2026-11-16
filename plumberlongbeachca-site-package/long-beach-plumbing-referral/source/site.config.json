@@ -12,8 +12,8 @@
     "operatorStatus": "unconfigured"
   },
   "domain": {
-    "hostname": "",
-    "verified": false
+    "hostname": "www.plumberlongbeachca.net",
+    "verified": true
   },
   "phone": {
     "display": "",

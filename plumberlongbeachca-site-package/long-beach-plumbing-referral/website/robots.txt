@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://plumberlongbeachcanet.vercel.app/sitemap.xml
+Sitemap: https://www.plumberlongbeachca.net/sitemap.xml
