@@ -1,7 +1,12 @@
-# Private preview. Do not publish this folder.
+# Indexable rules. Review before Apache upload.
 Options -Indexes
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
-<IfModule mod_headers.c>
-Header set X-Robots-Tag "noindex, nofollow, noarchive"
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
 </IfModule>

@@ -214,18 +214,21 @@ const notFound = `<!DOCTYPE html>
 `;
 fs.writeFileSync(path.join(outDir, "404.html"), notFound);
 
-const robots = config.mode === "production"
-  ? `User-agent: *\nAllow: /\n\nSitemap: https://${config.domain.hostname}/sitemap.xml\n`
+const isIndexable = config.mode === "production" || config.indexable === true;
+const sitemapHost = config.domain?.hostname || "plumberlongbeachcanet.vercel.app";
+
+const robots = isIndexable
+  ? `User-agent: *\nAllow: /\n\nSitemap: https://${sitemapHost}/sitemap.xml\n`
   : `User-agent: *\nDisallow: /\n\n# Private preview. This file is not a production sitemap policy.\n`;
 fs.writeFileSync(path.join(outDir, "robots.txt"), robots);
 
-const sitemap = config.mode === "production"
-  ? `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${expected.map((url) => `  <url><loc>https://${config.domain.hostname}${url}</loc></url>`).join("\n")}\n</urlset>\n`
+const sitemap = isIndexable
+  ? `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${expected.map((url) => `  <url><loc>https://${sitemapHost}${url}</loc></url>`).join("\n")}\n</urlset>\n`
   : `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n<!-- Private preview: no URLs are listed until a verified production domain is configured. -->\n</urlset>\n`;
 fs.writeFileSync(path.join(outDir, "sitemap.xml"), sitemap);
 
-const htaccess = config.mode === "production"
-  ? `# Production rules generated with a verified domain. Review before upload.\nOptions -Indexes\nDirectoryIndex index.html\nErrorDocument 404 /404.html\n<IfModule mod_rewrite.c>\nRewriteEngine On\nRewriteCond %{HTTPS} !=on\nRewriteCond %{HTTP:X-Forwarded-Proto} !=https\nRewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]\nRewriteCond %{REQUEST_FILENAME} -d\nRewriteRule ^(.+[^/])$ /$1/ [R=301,L]\n</IfModule>\n`
+const htaccess = isIndexable
+  ? `# Indexable rules. Review before Apache upload.\nOptions -Indexes\nDirectoryIndex index.html\nErrorDocument 404 /404.html\n<IfModule mod_rewrite.c>\nRewriteEngine On\nRewriteCond %{HTTPS} !=on\nRewriteCond %{HTTP:X-Forwarded-Proto} !=https\nRewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]\nRewriteCond %{REQUEST_FILENAME} -d\nRewriteRule ^(.+[^/])$ /$1/ [R=301,L]\n</IfModule>\n`
   : `# Private preview. Do not publish this folder.\nOptions -Indexes\nDirectoryIndex index.html\nErrorDocument 404 /404.html\n<IfModule mod_headers.c>\nHeader set X-Robots-Tag "noindex, nofollow, noarchive"\n</IfModule>\n`;
 fs.writeFileSync(path.join(outDir, ".htaccess"), htaccess);
 

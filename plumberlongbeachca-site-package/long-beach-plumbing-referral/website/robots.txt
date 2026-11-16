@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# Private preview. This file is not a production sitemap policy.
+Sitemap: https://plumberlongbeachcanet.vercel.app/sitemap.xml

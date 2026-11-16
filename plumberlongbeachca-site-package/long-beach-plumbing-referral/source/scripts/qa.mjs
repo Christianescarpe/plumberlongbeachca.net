@@ -24,11 +24,19 @@ const pages = htmlFiles.filter((file) => path.basename(file) === "index.html");
 if (pages.length !== 28) fail(`Expected 28 index.html pages, found ${pages.length}`);
 if (!htmlFiles.some((file) => file.endsWith(`${path.sep}404.html`))) fail("Missing 404.html");
 
+const config = JSON.parse(fs.readFileSync(path.join(root, "site.config.json"), "utf8"));
+const isIndexable = config.mode === "production" || config.indexable === true;
+
 const robots = fs.readFileSync(path.join(dist, "robots.txt"), "utf8");
-if (!/Disallow:\s*\//.test(robots)) fail("Preview robots.txt does not disallow /");
-if (/^Allow:\s*\/$/m.test(robots)) fail("Preview robots.txt allows crawling");
 const sitemap = fs.readFileSync(path.join(dist, "sitemap.xml"), "utf8");
-if (sitemap.includes("<loc>")) fail("Preview sitemap lists URLs");
+if (isIndexable) {
+  if (!/^Allow:\s*\/$/m.test(robots)) fail("Indexable robots.txt does not allow /");
+  if (!sitemap.includes("<loc>")) fail("Indexable sitemap.xml has no <loc> entries");
+} else {
+  if (!/Disallow:\s*\//.test(robots)) fail("Preview robots.txt does not disallow /");
+  if (/^Allow:\s*\/$/m.test(robots)) fail("Preview robots.txt allows crawling");
+  if (sitemap.includes("<loc>")) fail("Preview sitemap lists URLs");
+}
 
 const allowTel = new Set([
   "tel:+15625702390",
@@ -56,8 +64,17 @@ for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   if (!html.startsWith("<!DOCTYPE html>")) fail(`${url} missing doctype`);
   if (!html.includes('lang="en"')) fail(`${url} missing lang`);
-  if (!html.includes('content="noindex, nofollow, noarchive"')) fail(`${url} missing preview robots`);
-  if (/rel="canonical"/i.test(html)) fail(`${url} has a canonical in preview`);
+  if (url !== "/404.html") {
+    if (isIndexable) {
+      if (!html.includes('content="index, follow"')) fail(`${url} missing index, follow robots`);
+    } else {
+      if (!html.includes('content="noindex, nofollow, noarchive"')) fail(`${url} missing preview robots`);
+    }
+    if (config.googleSiteVerification && !html.includes(`content="${config.googleSiteVerification}"`)) {
+      fail(`${url} missing google-site-verification meta tag`);
+    }
+  }
+  if (/rel="canonical"/i.test(html) && config.mode !== "production") fail(`${url} has a canonical in preview`);
   if (/<form[\s>]/i.test(html)) fail(`${url} contains a form`);
   if (/FAQPage|LocalBusiness|aggregateRating|reviewCount/i.test(html)) fail(`${url} has forbidden schema`);
   if (/Arroyo|\$180|180\/call|our plumbers|our technicians|our crew|licensed and insured/i.test(html)) {

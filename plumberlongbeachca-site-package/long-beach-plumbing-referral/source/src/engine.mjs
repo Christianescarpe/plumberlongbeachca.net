@@ -747,7 +747,11 @@ export function renderDocument(doc, config, photos) {
     const last = index === crumbs.length - 1;
     return `<li>${last ? escapeHtml(name) : `<a href="${escapeHtml(href)}">${escapeHtml(name)}</a>`}</li>`;
   }).join("")}</ol>` : "";
-  const robots = config.mode === "production" ? "index, follow" : "noindex, nofollow, noarchive";
+  const isIndexable = config.mode === "production" || config.indexable === true;
+  const robots = isIndexable ? "index, follow" : "noindex, nofollow, noarchive";
+  const verificationMeta = config.googleSiteVerification
+    ? `\n  <meta name="google-site-verification" content="${escapeHtml(config.googleSiteVerification)}">`
+    : "";
   const canonical = config.mode === "production" ? `<link rel="canonical" href="https://${escapeHtml(config.domain.hostname)}${escapeHtml(front.path)}">` : "";
   const ogUrl = config.mode === "production" ? `<meta property="og:url" content="https://${escapeHtml(config.domain.hostname)}${escapeHtml(front.path)}">` : "";
   const banner = "";
@@ -787,7 +791,7 @@ ${renderFlow(rest, config, photos, faqHeading)}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(front.title)}</title>
   <meta name="description" content="${escapeHtml(front.description)}">
-  <meta name="robots" content="${robots}">
+  <meta name="robots" content="${robots}">${verificationMeta}
   ${canonical}
   <meta property="og:title" content="${escapeHtml(front.title)}">
   <meta property="og:description" content="${escapeHtml(front.description)}">
