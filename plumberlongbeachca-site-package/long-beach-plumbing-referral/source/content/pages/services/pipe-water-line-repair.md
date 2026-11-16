@@ -1,6 +1,6 @@
 ---
 path: /services/pipe-water-line-repair/
-title: Pipe and Water Line Repair in Long Beach, CA | Long Beach Plumbing Referral
+title: Pipe & Water Line Repair Long Beach | Long Beach Referral
 h1: Pipe and Water Line Repair in Long Beach
 description: Pipe and water line repair in Long Beach, including pressure, private supply lines, and the meter boundary. No repipe promise. Referral only.
 intent: pipe repair, repiping, and private water lines in Long Beach

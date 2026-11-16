@@ -1,6 +1,6 @@
 ---
 path: /services/fixtures-remodel-plumbing/
-title: Fixture and Remodel Plumbing in Long Beach, CA | Long Beach Plumbing Referral
+title: Fixture & Remodel Plumbing Long Beach | Long Beach Referral
 h1: Fixture and Remodel Plumbing in Long Beach
 description: Fixture and remodel plumbing in Long Beach for toilets, sinks, tubs, showers, and disposals. Finish trades are not included by default.
 intent: toilets, faucets, sinks, tubs, showers, disposals, and remodel plumbing in Long Beach

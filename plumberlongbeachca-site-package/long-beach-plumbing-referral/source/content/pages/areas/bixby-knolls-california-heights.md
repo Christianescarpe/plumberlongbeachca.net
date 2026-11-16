@@ -1,6 +1,6 @@
 ---
 path: /areas/bixby-knolls-california-heights/
-title: Plumbing Help in Bixby Knolls and California Heights | Long Beach Plumbing Referral
+title: Bixby Knolls & Cal Heights Plumbing | Long Beach Referral
 h1: Plumbing Help in Bixby Knolls and California Heights
 description: Plumbing help for Bixby Knolls and California Heights in 90807. 1920s housing is context, not proof of failed pipe. Referral only.
 intent: Bixby Knolls and California Heights plumbing context

@@ -1,6 +1,6 @@
 ---
 path: /services/gas-line-plumbing/
-title: Gas Line Plumbing in Long Beach, CA | Long Beach Plumbing Referral
+title: Gas Line Plumbing Long Beach | Long Beach Plumbing Referral
 h1: Gas Line Plumbing in Long Beach
 description: Planned gas line plumbing in Long Beach, with suspected leaks sent to the utility or 911. No DIY tests and no emergency sales routing.
 intent: planned gas line installation and repair in Long Beach

@@ -1,6 +1,6 @@
 ---
 path: /areas/wrigley-west-central/
-title: Plumbing Help in Wrigley and West-Central Long Beach | Long Beach Plumbing Referral
+title: Wrigley & West-Central Plumbing | Long Beach Referral
 h1: Plumbing Help in Wrigley and West-Central Long Beach
 description: Plumbing help for Wrigley and west-central Long Beach. The cottage historic district is two blocks. ZIPs 90806 and 90810 are broader. Referral only.
 intent: Wrigley and west-central Long Beach plumbing context

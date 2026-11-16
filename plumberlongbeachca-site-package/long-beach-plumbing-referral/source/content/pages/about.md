@@ -1,6 +1,6 @@
 ---
 path: /about/
-title: About This Plumbing Referral Service | Long Beach Plumbing Referral
+title: About Our Plumbing Referral | Long Beach Plumbing Referral
 h1: About this plumbing referral service
 description: How this Long Beach plumbing referral service introduces callers to independent providers, and what the provider quotes directly.
 intent: referral identity, operator disclosure, and limits

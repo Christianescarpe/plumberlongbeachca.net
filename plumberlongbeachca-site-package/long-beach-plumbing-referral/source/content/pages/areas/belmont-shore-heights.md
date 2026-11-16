@@ -1,6 +1,6 @@
 ---
 path: /areas/belmont-shore-heights/
-title: Plumbing Help in Belmont Shore and Belmont Heights | Long Beach Plumbing Referral
+title: Belmont Shore & Heights Plumbing | Long Beach Referral
 h1: Plumbing Help in Belmont Shore and Belmont Heights
 description: Plumbing help for Belmont Shore, Belmont Heights, Bluff Park, and Bluff Heights. ZIPs 90803 and 90814. Historic facts without salt-damage claims.
 intent: Belmont Shore and Belmont Heights plumbing context

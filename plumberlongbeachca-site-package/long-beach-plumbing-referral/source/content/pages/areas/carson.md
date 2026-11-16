@@ -2,7 +2,7 @@
 path: /areas/carson/
 title: Plumbing Help in Carson, CA | Long Beach Plumbing Referral
 h1: Plumbing Help in Carson
-description: Plumbing help for Carson with residential and business calls qualified separately. No industrial promise. Private water lines are not the utility main. Referral only.
+description: Plumbing help for Carson with residential and business calls qualified separately. Private water lines are not the utility main. Referral only.
 intent: Carson residential and commercial plumbing routing
 kind: city
 crumb: Carson

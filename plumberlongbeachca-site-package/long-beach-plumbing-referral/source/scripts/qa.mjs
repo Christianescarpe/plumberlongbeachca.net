@@ -67,14 +67,16 @@ for (const file of htmlFiles) {
   if (url !== "/404.html") {
     if (isIndexable) {
       if (!html.includes('content="index, follow"')) fail(`${url} missing index, follow robots`);
+      if (!/rel="canonical"/i.test(html)) fail(`${url} missing canonical link`);
+      if (!/property="og:image"/i.test(html)) fail(`${url} missing og:image`);
     } else {
       if (!html.includes('content="noindex, nofollow, noarchive"')) fail(`${url} missing preview robots`);
+      if (/rel="canonical"/i.test(html)) fail(`${url} has a canonical in preview`);
     }
     if (config.googleSiteVerification && !html.includes(`content="${config.googleSiteVerification}"`)) {
       fail(`${url} missing google-site-verification meta tag`);
     }
   }
-  if (/rel="canonical"/i.test(html) && config.mode !== "production") fail(`${url} has a canonical in preview`);
   if (/<form[\s>]/i.test(html)) fail(`${url} contains a form`);
   if (/FAQPage|LocalBusiness|aggregateRating|reviewCount/i.test(html)) fail(`${url} has forbidden schema`);
   if (/Arroyo|\$180|180\/call|our plumbers|our technicians|our crew|licensed and insured/i.test(html)) {

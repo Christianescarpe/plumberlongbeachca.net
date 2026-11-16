@@ -1,6 +1,6 @@
 ---
 path: /services/water-heaters/
-title: Water Heater Repair and Installation in Long Beach, CA | Long Beach Plumbing Referral
+title: Water Heaters Long Beach, CA | Long Beach Plumbing Referral
 h1: Water Heater Repair and Installation in Long Beach
 description: Water heater repair and installation in Long Beach for storage tanks and tankless units. No age rule, no savings claim, referral only.
 intent: water heater repair, replacement, tank and tankless in Long Beach

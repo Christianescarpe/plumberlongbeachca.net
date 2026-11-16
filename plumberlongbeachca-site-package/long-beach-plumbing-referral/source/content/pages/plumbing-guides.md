@@ -1,6 +1,6 @@
 ---
 path: /plumbing-guides/
-title: Long Beach Plumbing Questions and Guides | Long Beach Plumbing Referral
+title: Long Beach Plumbing Guides | Long Beach Plumbing Referral
 h1: Long Beach plumbing questions and guides
 description: Decision guides for Long Beach plumbing: backups, jetting, heaters, pressure, permits, and how a referral call is answered. Not a blog yet.
 intent: launch FAQ hub and future article roadmap

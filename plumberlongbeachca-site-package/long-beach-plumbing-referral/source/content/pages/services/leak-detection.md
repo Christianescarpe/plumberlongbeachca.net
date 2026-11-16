@@ -1,6 +1,6 @@
 ---
 path: /services/leak-detection/
-title: Leak Detection and Repair in Long Beach, CA | Long Beach Plumbing Referral
+title: Leak Detection Long Beach, CA | Long Beach Plumbing Referral
 h1: Leak Detection and Repair in Long Beach
 description: Leak detection in Long Beach separates a fixture drip from a supply leak. No slab guarantee, no invented method, referral only.
 intent: leak detection and plumbing inspection in Long Beach

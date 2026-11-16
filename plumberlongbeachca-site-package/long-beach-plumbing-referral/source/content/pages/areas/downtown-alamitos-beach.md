@@ -1,6 +1,6 @@
 ---
 path: /areas/downtown-alamitos-beach/
-title: Plumbing Help in Downtown and Alamitos Beach | Long Beach Plumbing Referral
+title: Downtown & Alamitos Beach Plumbing | Long Beach Referral
 h1: Plumbing Help in Downtown and Alamitos Beach
 description: Plumbing help for downtown Long Beach and Alamitos Beach, including Willmore, Drake Park, and condo access. ZIPs 90802 and 90813. Referral only.
 intent: downtown and Alamitos Beach plumbing context

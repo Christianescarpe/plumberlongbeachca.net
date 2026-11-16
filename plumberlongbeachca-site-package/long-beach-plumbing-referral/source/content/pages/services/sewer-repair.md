@@ -1,6 +1,6 @@
 ---
 path: /services/sewer-repair/
-title: Sewer Line Repair in Long Beach, CA | Long Beach Plumbing Referral
+title: Sewer Line Repair Long Beach | Long Beach Plumbing Referral
 h1: Sewer Line Repair in Long Beach
 description: Sewer line repair in Long Beach starts with the lateral split, a camera, and who maintains the main. Referral only. Trenchless is not promised.
 intent: sewer line repair and camera inspection in Long Beach

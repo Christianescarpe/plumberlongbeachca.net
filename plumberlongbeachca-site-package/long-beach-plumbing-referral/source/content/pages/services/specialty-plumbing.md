@@ -1,6 +1,6 @@
 ---
 path: /services/specialty-plumbing/
-title: Specialty Plumbing in Long Beach, CA | Long Beach Plumbing Referral
+title: Specialty Plumbing Long Beach | Long Beach Plumbing Referral
 h1: Specialty Plumbing in Long Beach
 description: Specialty plumbing in Long Beach for treatment, backflow, sumps, and conditional work such as wells, pools, and radiant heat. Availability is not confirmed.
 intent: specialty plumbing topics that must be confirmed before they are offered

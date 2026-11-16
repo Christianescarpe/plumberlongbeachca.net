@@ -1,6 +1,6 @@
 ---
 path: /services/commercial-plumbing/
-title: Commercial Plumbing in Long Beach, CA | Long Beach Plumbing Referral
+title: Commercial Plumbing Long Beach | Long Beach Plumbing Referral
 h1: Commercial Plumbing in Long Beach
 description: Commercial plumbing in Long Beach for authorized callers, shared systems, and ordinary fixtures. Grease traps and industrial work are not assumed.
 intent: commercial plumbing qualification in Long Beach

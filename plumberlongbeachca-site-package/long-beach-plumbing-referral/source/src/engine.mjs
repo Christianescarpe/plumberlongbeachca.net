@@ -440,28 +440,63 @@ function assignIds(blocks, filename) {
   return used;
 }
 
+function getSiteOrigin(config) {
+  const host = config.domain?.hostname || "plumberlongbeachcanet.vercel.app";
+  return `https://${host}`;
+}
+
 function jsonLd(doc, config) {
   const path = doc.front.path;
-  const origin = config.mode === "production" ? `https://${config.domain.hostname}` : "";
+  const isIndexable = config.mode === "production" || config.indexable === true;
+  const origin = isIndexable ? getSiteOrigin(config) : "";
+  const orgId = origin ? `${origin}/#organization` : undefined;
+  const siteId = origin ? `${origin}/#website` : undefined;
   const graph = [];
   const org = {
     "@type": "Organization",
+    ...(orgId ? { "@id": orgId } : {}),
     name: config.brand.publicName,
     description: "Independent referral service that publishes plumbing decision guides and may connect callers with third-party providers. Not a plumbing contractor.",
+    areaServed: [
+      { "@type": "City", name: "Long Beach", addressRegion: "CA", addressCountry: "US" },
+      { "@type": "City", name: "Signal Hill", addressRegion: "CA", addressCountry: "US" },
+      { "@type": "City", name: "Lakewood", addressRegion: "CA", addressCountry: "US" },
+      { "@type": "City", name: "Seal Beach", addressRegion: "CA", addressCountry: "US" },
+      { "@type": "City", name: "Los Alamitos", addressRegion: "CA", addressCountry: "US" },
+      { "@type": "City", name: "Carson", addressRegion: "CA", addressCountry: "US" },
+    ],
   };
-  if (origin) org.url = origin + "/";
+  if (origin) org.url = `${origin}/`;
   graph.push(org);
   if (path === "/") {
-    const site = { "@type": "WebSite", name: config.brand.publicName, description: org.description };
-    if (origin) site.url = origin + "/";
+    const site = {
+      "@type": "WebSite",
+      ...(siteId ? { "@id": siteId } : {}),
+      name: config.brand.publicName,
+      description: org.description,
+      inLanguage: "en-US",
+      ...(orgId ? { publisher: { "@id": orgId } } : {}),
+    };
+    if (origin) site.url = `${origin}/`;
     graph.push(site);
   }
+  const webPage = {
+    "@type": "WebPage",
+    name: doc.front.title,
+    description: doc.front.description,
+    inLanguage: "en-US",
+    ...(origin ? { "@id": `${origin}${path}#webpage`, url: `${origin}${path}` } : {}),
+    ...(siteId ? { isPartOf: { "@id": siteId } } : {}),
+    ...(orgId ? { about: { "@id": orgId } } : {}),
+  };
+  graph.push(webPage);
   if (doc.front.kind === "service") {
     graph.push({
       "@type": "Service",
       name: doc.front.h1,
       serviceType: "Referral introduction",
-      provider: { "@type": "Organization", name: config.brand.publicName },
+      provider: orgId ? { "@id": orgId } : { "@type": "Organization", name: config.brand.publicName },
+      areaServed: { "@type": "City", name: "Long Beach", addressRegion: "CA", addressCountry: "US" },
       description: doc.front.description,
     });
   }
@@ -471,7 +506,7 @@ function jsonLd(doc, config) {
       "@type": "BreadcrumbList",
       itemListElement: crumbs.map(([name, href], index) => {
         const item = { "@type": "ListItem", position: index + 1, name };
-        if (origin) item.item = origin + href;
+        if (origin) item.item = `${origin}${href}`;
         return item;
       }),
     });
@@ -748,12 +783,20 @@ export function renderDocument(doc, config, photos) {
     return `<li>${last ? escapeHtml(name) : `<a href="${escapeHtml(href)}">${escapeHtml(name)}</a>`}</li>`;
   }).join("")}</ol>` : "";
   const isIndexable = config.mode === "production" || config.indexable === true;
+  const siteOrigin = getSiteOrigin(config);
   const robots = isIndexable ? "index, follow" : "noindex, nofollow, noarchive";
   const verificationMeta = config.googleSiteVerification
     ? `\n  <meta name="google-site-verification" content="${escapeHtml(config.googleSiteVerification)}">`
     : "";
-  const canonical = config.mode === "production" ? `<link rel="canonical" href="https://${escapeHtml(config.domain.hostname)}${escapeHtml(front.path)}">` : "";
-  const ogUrl = config.mode === "production" ? `<meta property="og:url" content="https://${escapeHtml(config.domain.hostname)}${escapeHtml(front.path)}">` : "";
+  const canonical = isIndexable ? `<link rel="canonical" href="${escapeHtml(`${siteOrigin}${front.path}`)}">` : "";
+  const ogUrl = isIndexable ? `<meta property="og:url" content="${escapeHtml(`${siteOrigin}${front.path}`)}">` : "";
+  const heroMeta = front.hero ? photos[front.hero] : null;
+  const ogImagePath = heroMeta ? `/assets/photos/${heroMeta.filename_1600}` : "/assets/photos/service-index-overview-1600.jpg";
+  const ogImageUrl = `${siteOrigin}${ogImagePath}`;
+  const ogImageAlt = front.heroAlt || front.title;
+  const preloadHero = heroMeta
+    ? `\n  <link rel="preload" as="image" href="/assets/photos/${escapeHtml(heroMeta.filename_800)}" imagesrcset="/assets/photos/${escapeHtml(heroMeta.filename_800)} ${heroMeta.width_800}w, /assets/photos/${escapeHtml(heroMeta.filename_1600)} ${heroMeta.width_1600}w" imagesizes="(min-width: 960px) 640px, 100vw">`
+    : "";
   const banner = "";
   const currentNav = primaryNav.find(([, href]) => front.path === href || (href !== "/" && front.path.startsWith(href)))?.[1] || "";
   const isHome = front.path === "/";
@@ -793,12 +836,21 @@ ${renderFlow(rest, config, photos, faqHeading)}
   <meta name="description" content="${escapeHtml(front.description)}">
   <meta name="robots" content="${robots}">${verificationMeta}
   ${canonical}
+  <meta property="og:site_name" content="${escapeHtml(config.brand.publicName)}">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="${escapeHtml(front.title)}">
   <meta property="og:description" content="${escapeHtml(front.description)}">
   <meta property="og:type" content="website">
   ${ogUrl}
+  <meta property="og:image" content="${escapeHtml(ogImageUrl)}">
+  <meta property="og:image:alt" content="${escapeHtml(ogImageAlt)}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${escapeHtml(front.title)}">
+  <meta name="twitter:description" content="${escapeHtml(front.description)}">
+  <meta name="twitter:image" content="${escapeHtml(ogImageUrl)}">
   <meta name="theme-color" content="#000000">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/source-sans-3-latin-400-normal.woff2" crossorigin>${preloadHero}
   <link rel="stylesheet" href="/assets/site.css">
   <script type="application/ld+json">${jsonLd(doc, config)}</script>
 </head>
